@@ -1,0 +1,4346 @@
+[
+  {
+    "document": "Manuscript",
+    "number": 1,
+    "caption": "Table 1. Study blocks used to evaluate selective geospatial segmentation.",
+    "cells": [
+      [
+        "Block",
+        "Dataset",
+        "Hazard/task",
+        "Inputs",
+        "Segmenter",
+        "Unit",
+        "Repeated runs"
+      ],
+      [
+        "P1",
+        "Sen1Floods11",
+        "Binary flood segmentation",
+        "Sentinel-1 VV/VH",
+        "U-Net",
+        "Event",
+        "3 folds × 3 seeds"
+      ],
+      [
+        "P2",
+        "Sen1Floods11",
+        "Binary flood segmentation",
+        "Sentinel-1 VV/VH",
+        "DOFA–UPerNet",
+        "Event",
+        "3 folds × 3 seeds"
+      ],
+      [
+        "E1",
+        "Kuro Siwo",
+        "Multiclass flood segmentation",
+        "Sentinel-1 time series + elevation",
+        "U-Net",
+        "Event",
+        "3 seeds"
+      ],
+      [
+        "E2",
+        "Burn Scars",
+        "Binary burn-scar segmentation",
+        "Six optical bands",
+        "U-Net",
+        "Dataset",
+        "3 seeds"
+      ],
+      [
+        "E3",
+        "Burn Scars",
+        "Binary burn-scar segmentation",
+        "Six optical bands",
+        "DOFA–UPerNet",
+        "Dataset",
+        "3 seeds"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      1.06,
+      1.02,
+      0.88,
+      1.2,
+      0.75,
+      0.99
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 4.5,
+    "notes": [],
+    "aliases": [
+      {
+        "row": 3,
+        "column": 3,
+        "old": "Multi-temporal Sentinel-1 + elevation",
+        "new": "Sentinel-1 time series + elevation"
+      }
+    ]
+  },
+  {
+    "document": "Manuscript",
+    "number": 2,
+    "caption": "Table 2. Sen1Floods11 event composition and role assignment across rotations.",
+    "cells": [
+      [
+        "Event",
+        "Location",
+        "Sentinel-1 date",
+        "Tiles",
+        "Water prevalence",
+        "F1",
+        "F2",
+        "F3"
+      ],
+      [
+        "BOL",
+        "Bolivia",
+        "2018-02-15",
+        "15",
+        "0.159",
+        "Test",
+        "Train",
+        "Cal."
+      ],
+      [
+        "ESP",
+        "Spain",
+        "2019-09-17",
+        "30",
+        "0.132",
+        "Test",
+        "Train",
+        "Cal."
+      ],
+      [
+        "GHA",
+        "Ghana",
+        "2018-09-18",
+        "48",
+        "0.063",
+        "Cal.",
+        "Test",
+        "Train"
+      ],
+      [
+        "IND",
+        "India",
+        "2016-08-12",
+        "68",
+        "0.124",
+        "Train",
+        "Cal.",
+        "Test"
+      ],
+      [
+        "KHM",
+        "Cambodia / Mekong",
+        "2018-08-05",
+        "30",
+        "0.241",
+        "Test",
+        "Train",
+        "Cal."
+      ],
+      [
+        "LKA",
+        "Sri Lanka",
+        "2017-05-30",
+        "42",
+        "0.118",
+        "Train",
+        "Cal.",
+        "Test"
+      ],
+      [
+        "NGA",
+        "Nigeria",
+        "2018-09-21",
+        "18",
+        "0.235",
+        "Test",
+        "Train",
+        "Cal."
+      ],
+      [
+        "PAK",
+        "Pakistan",
+        "2017-06-28",
+        "28",
+        "0.075",
+        "Cal.",
+        "Test",
+        "Train"
+      ],
+      [
+        "PRY",
+        "Paraguay",
+        "2018-10-31",
+        "66",
+        "0.081",
+        "Train",
+        "Cal.",
+        "Test"
+      ],
+      [
+        "SOM",
+        "Somalia",
+        "2018-05-07",
+        "26",
+        "0.065",
+        "Train",
+        "Cal.",
+        "Test"
+      ],
+      [
+        "USA",
+        "United States",
+        "2019-05-22",
+        "69",
+        "0.046",
+        "Cal.",
+        "Test",
+        "Train"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      1.25,
+      0.98,
+      0.52,
+      0.8499999999999999,
+      0.76,
+      0.77,
+      0.77
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "Water prevalence in Table 2 is the number of reference-labeled water pixels divided by all pixels with a valid reference label within each event, pooled across its included tiles. It is a reference-area fraction, not the fraction of tiles containing water or the predicted water fraction. The table also records rotating event roles; Supplementary Fig. S2 maps the official event footprints. Cal. denotes calibration; F1–F3 are the three role rotations."
+    ],
+    "aliases": [
+      {
+        "row": 1,
+        "column": 7,
+        "old": "Calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 2,
+        "column": 7,
+        "old": "Calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 3,
+        "column": 5,
+        "old": "Calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 4,
+        "column": 6,
+        "old": "Calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 5,
+        "column": 1,
+        "old": "Cambodia/Mekong",
+        "new": "Cambodia / Mekong"
+      },
+      {
+        "row": 5,
+        "column": 7,
+        "old": "Calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 6,
+        "column": 6,
+        "old": "Calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 7,
+        "column": 7,
+        "old": "Calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 8,
+        "column": 5,
+        "old": "Calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 9,
+        "column": 6,
+        "old": "Calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 10,
+        "column": 6,
+        "old": "Calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 11,
+        "column": 5,
+        "old": "Calibration",
+        "new": "Cal."
+      }
+    ]
+  },
+  {
+    "document": "Manuscript",
+    "number": 3,
+    "caption": "Table 3. Paired calibration-event AURC effects under four evaluation functionals.",
+    "cells": [
+      [
+        "Evaluation functional",
+        "P1 mean\nΔAURC",
+        "P1\nΔ < 0",
+        "P2 mean\nΔAURC",
+        "P2\nΔ < 0"
+      ],
+      [
+        "Mean retained per-tile mIoU loss",
+        "−0.00045",
+        "21/33",
+        "−0.00301",
+        "19/33"
+      ],
+      [
+        "Pooled-event mIoU risk",
+        "−0.02288",
+        "28/33",
+        "−0.04082",
+        "33/33"
+      ],
+      [
+        "Pooled-event foreground IoU risk",
+        "−0.00751",
+        "19/33",
+        "−0.03031",
+        "26/33"
+      ],
+      [
+        "Pooled-event foreground Dice risk",
+        "−0.00197",
+        "19/33",
+        "−0.02701",
+        "25/33"
+      ]
+    ],
+    "widths_inches": [
+      2.3,
+      1.15,
+      0.9000000000000001,
+      1.15,
+      1.0
+    ],
+    "font_size": 10,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "Differences are ridge minus Soft Dice-style self-overlap AURC; negative values favor ridge. Each block contains 33 correlated leave-one-calibration-event-out diagnostics (11 held events across three seeds). Only the error aggregation changed; the held-event scores and tile orderings were identical. Counts report ΔAURC < 0 among these diagnostics."
+    ],
+    "aliases": []
+  },
+  {
+    "document": "Manuscript",
+    "number": 4,
+    "caption": "Table 4. Tile-count and reference-hazard coverage at the nominal 80% tile operating point.",
+    "cells": [
+      [
+        "Block",
+        "Score",
+        "Tile-count coverage",
+        "Valid-pixel coverage",
+        "Reference hazard\ncoverage",
+        "Hazard minus tile coverage"
+      ],
+      [
+        "P1",
+        "GeoRisk v2",
+        "0.810",
+        "0.818",
+        "0.713",
+        "−0.096"
+      ],
+      [
+        "P1",
+        "Self-overlap",
+        "0.810",
+        "0.802",
+        "0.949",
+        "+0.139"
+      ],
+      [
+        "P1",
+        "High predicted-foreground risk",
+        "0.810",
+        "0.814",
+        "0.442",
+        "−0.368"
+      ],
+      [
+        "P1",
+        "Predicted-foreground scarcity",
+        "0.810",
+        "0.805",
+        "0.954",
+        "+0.144"
+      ],
+      [
+        "P2",
+        "GeoRisk v2",
+        "0.810",
+        "0.821",
+        "0.798",
+        "−0.012"
+      ],
+      [
+        "P2",
+        "Self-overlap",
+        "0.810",
+        "0.812",
+        "0.979",
+        "+0.169"
+      ],
+      [
+        "P2",
+        "High predicted-foreground risk",
+        "0.810",
+        "0.809",
+        "0.389",
+        "−0.420"
+      ],
+      [
+        "P2",
+        "Predicted-foreground scarcity",
+        "0.810",
+        "0.814",
+        "0.979",
+        "+0.170"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      1.5,
+      1.05,
+      1.0,
+      1.15,
+      1.2
+    ],
+    "font_size": 10,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "Values are means over 33 correlated run-event combinations per block. The operating point retained the lowest-risk integer number of tiles corresponding to nominal coverage 0.80 within each event; unequal event sizes yield mean count coverage 0.810. Reference-hazard coverage is a retrospective label-based diagnostic, not an inference-available routing variable."
+    ],
+    "aliases": []
+  },
+  {
+    "document": "Manuscript",
+    "number": 5,
+    "caption": "Table 5. GeoRisk v2 and stored self-overlap across study blocks.",
+    "cells": [
+      [
+        "Block",
+        "Dataset and segmenter",
+        "GeoRisk v2 AURC",
+        "Self-overlap AURC",
+        "Mean paired ΔAURC",
+        "Runs favoring v2"
+      ],
+      [
+        "P1",
+        "Sen1Floods11, U-Net",
+        "0.2250",
+        "0.2593",
+        "−0.0343",
+        "9/9"
+      ],
+      [
+        "P2",
+        "Sen1Floods11, DOFA–UPerNet",
+        "0.2384",
+        "0.2783",
+        "−0.0400",
+        "9/9"
+      ],
+      [
+        "E1",
+        "Kuro Siwo, U-Net",
+        "0.2971",
+        "0.2953",
+        "+0.0018",
+        "0/3"
+      ],
+      [
+        "E2",
+        "Burn Scars, U-Net",
+        "0.0769",
+        "0.0990",
+        "−0.0221",
+        "3/3"
+      ],
+      [
+        "E3",
+        "Burn Scars, DOFA–UPerNet",
+        "0.1384",
+        "0.1971",
+        "−0.0587",
+        "3/3"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      1.58,
+      1.06,
+      1.06,
+      1.1,
+      1.1
+    ],
+    "font_size": 10,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "Values are means across paired runs under the originally implemented pooled-event mIoU endpoint. P1/P2 contain three event rotations by three seeds; E1–E3 contain three seeds. Runs share data and fitted models and are not independent geographic replications. Binary blocks use the stored epsilon-smoothed self-overlap implementation; E1 uses the custom multiclass extension. External coefficients and thresholds were fitted on labeled target calibration data."
+    ],
+    "aliases": []
+  },
+  {
+    "document": "Manuscript",
+    "number": 6,
+    "caption": "Table 6. Reporting checklist for spatially selective mapping studies.",
+    "cells": [
+      [
+        "Report",
+        "Required description"
+      ],
+      [
+        "Spatial decision unit",
+        "Tile size, mask, boundary and rule for referring a unit to review."
+      ],
+      [
+        "Risk functional",
+        "Tile-mean versus pooled-event loss; class-specific endpoint; event weighting."
+      ],
+      [
+        "Class convention",
+        "Classes included at each coverage; treatment of absent or empty classes."
+      ],
+      [
+        "Coverage denominator",
+        "Retained tile count, valid-pixel area and reference/predicted hazard content."
+      ],
+      [
+        "Operating budget",
+        "Risk and content retention at the intended budget; relevant partial AURC."
+      ],
+      [
+        "Routing rule",
+        "Calibration threshold or fixed batch count; ties; realized review volume."
+      ],
+      [
+        "Evidence unit",
+        "Event and seed reuse, fitted-model dependence and uncertainty interpretation."
+      ],
+      [
+        "Validation history",
+        "Post-hoc choices, calibration access, target refitting and outer holdout status."
+      ]
+    ],
+    "widths_inches": [
+      1.5500000000000003,
+      4.950000000000001
+    ],
+    "font_size": 10,
+    "vertical_padding_points": 4.5,
+    "notes": [],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 1,
+    "caption": "Supplementary Table S1. Event composition and rotating role assignments.",
+    "cells": [
+      [
+        "Event",
+        "Location",
+        "Date",
+        "Tiles",
+        "Water prevalence",
+        "F1",
+        "F2",
+        "F3"
+      ],
+      [
+        "BOL",
+        "Bolivia",
+        "2018/02/15",
+        "15",
+        "0.1586",
+        "Test",
+        "Train",
+        "Cal."
+      ],
+      [
+        "ESP",
+        "Spain",
+        "2019/09/17",
+        "30",
+        "0.1315",
+        "Test",
+        "Train",
+        "Cal."
+      ],
+      [
+        "GHA",
+        "Ghana",
+        "2018/09/18",
+        "48",
+        "0.0628",
+        "Cal.",
+        "Test",
+        "Train"
+      ],
+      [
+        "IND",
+        "India",
+        "2016/08/12",
+        "68",
+        "0.1239",
+        "Train",
+        "Cal.",
+        "Test"
+      ],
+      [
+        "KHM",
+        "Cambodia",
+        "2018/08/05",
+        "30",
+        "0.2412",
+        "Test",
+        "Train",
+        "Cal."
+      ],
+      [
+        "LKA",
+        "Sri-Lanka",
+        "2017/05/30",
+        "42",
+        "0.1180",
+        "Train",
+        "Cal.",
+        "Test"
+      ],
+      [
+        "NGA",
+        "Nigeria",
+        "2018/09/21",
+        "18",
+        "0.2346",
+        "Test",
+        "Train",
+        "Cal."
+      ],
+      [
+        "PAK",
+        "Pakistan",
+        "2017/06/28",
+        "28",
+        "0.0750",
+        "Cal.",
+        "Test",
+        "Train"
+      ],
+      [
+        "PRY",
+        "Paraguay",
+        "2018/10/31",
+        "66",
+        "0.0811",
+        "Train",
+        "Cal.",
+        "Test"
+      ],
+      [
+        "SOM",
+        "Somalia",
+        "2018/05/07",
+        "26",
+        "0.0651",
+        "Train",
+        "Cal.",
+        "Test"
+      ],
+      [
+        "USA",
+        "USA",
+        "2019/05/22",
+        "69",
+        "0.0456",
+        "Cal.",
+        "Test",
+        "Train"
+      ]
+    ],
+    "widths_inches": [
+      0.6075581395348838,
+      1.436046511627907,
+      1.2703488372093024,
+      0.6627906976744187,
+      1.2151162790697676,
+      1.436046511627907,
+      1.436046511627907,
+      1.436046511627907
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "Cal. denotes calibration. F1–F3 are the three event-role rotations; date is the Sentinel-1 acquisition date."
+    ],
+    "aliases": [
+      {
+        "row": 1,
+        "column": 5,
+        "old": "test",
+        "new": "Test"
+      },
+      {
+        "row": 1,
+        "column": 6,
+        "old": "train",
+        "new": "Train"
+      },
+      {
+        "row": 1,
+        "column": 7,
+        "old": "calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 2,
+        "column": 5,
+        "old": "test",
+        "new": "Test"
+      },
+      {
+        "row": 2,
+        "column": 6,
+        "old": "train",
+        "new": "Train"
+      },
+      {
+        "row": 2,
+        "column": 7,
+        "old": "calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 3,
+        "column": 5,
+        "old": "calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 3,
+        "column": 6,
+        "old": "test",
+        "new": "Test"
+      },
+      {
+        "row": 3,
+        "column": 7,
+        "old": "train",
+        "new": "Train"
+      },
+      {
+        "row": 4,
+        "column": 5,
+        "old": "train",
+        "new": "Train"
+      },
+      {
+        "row": 4,
+        "column": 6,
+        "old": "calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 4,
+        "column": 7,
+        "old": "test",
+        "new": "Test"
+      },
+      {
+        "row": 5,
+        "column": 5,
+        "old": "test",
+        "new": "Test"
+      },
+      {
+        "row": 5,
+        "column": 6,
+        "old": "train",
+        "new": "Train"
+      },
+      {
+        "row": 5,
+        "column": 7,
+        "old": "calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 6,
+        "column": 5,
+        "old": "train",
+        "new": "Train"
+      },
+      {
+        "row": 6,
+        "column": 6,
+        "old": "calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 6,
+        "column": 7,
+        "old": "test",
+        "new": "Test"
+      },
+      {
+        "row": 7,
+        "column": 5,
+        "old": "test",
+        "new": "Test"
+      },
+      {
+        "row": 7,
+        "column": 6,
+        "old": "train",
+        "new": "Train"
+      },
+      {
+        "row": 7,
+        "column": 7,
+        "old": "calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 8,
+        "column": 5,
+        "old": "calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 8,
+        "column": 6,
+        "old": "test",
+        "new": "Test"
+      },
+      {
+        "row": 8,
+        "column": 7,
+        "old": "train",
+        "new": "Train"
+      },
+      {
+        "row": 9,
+        "column": 5,
+        "old": "train",
+        "new": "Train"
+      },
+      {
+        "row": 9,
+        "column": 6,
+        "old": "calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 9,
+        "column": 7,
+        "old": "test",
+        "new": "Test"
+      },
+      {
+        "row": 10,
+        "column": 5,
+        "old": "train",
+        "new": "Train"
+      },
+      {
+        "row": 10,
+        "column": 6,
+        "old": "calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 10,
+        "column": 7,
+        "old": "test",
+        "new": "Test"
+      },
+      {
+        "row": 11,
+        "column": 5,
+        "old": "calibration",
+        "new": "Cal."
+      },
+      {
+        "row": 11,
+        "column": 6,
+        "old": "test",
+        "new": "Test"
+      },
+      {
+        "row": 11,
+        "column": 7,
+        "old": "train",
+        "new": "Train"
+      }
+    ]
+  },
+  {
+    "document": "Supplementary",
+    "number": 2,
+    "caption": "Supplementary Table S2. Fitted component weights and calibration settings for every run.",
+    "cells": [
+      [
+        "Block",
+        "Partition",
+        "Seed",
+        "Ridge",
+        "Sweeps",
+        "Self-overlap type",
+        "Self-overlap",
+        "Uncertainty",
+        "Shift",
+        "Spatial",
+        "Sum"
+      ],
+      [
+        "E1",
+        "official",
+        "13",
+        "0.25",
+        "100",
+        "Custom multiclass self-overlap",
+        "0.9824",
+        "0.0000",
+        "0.0000",
+        "0.0176",
+        "1"
+      ],
+      [
+        "E1",
+        "official",
+        "37",
+        "0.25",
+        "100",
+        "Custom multiclass self-overlap",
+        "0.8891",
+        "0.0160",
+        "0.0000",
+        "0.0948",
+        "1"
+      ],
+      [
+        "E1",
+        "official",
+        "71",
+        "0.25",
+        "100",
+        "Custom multiclass self-overlap",
+        "0.8257",
+        "0.0848",
+        "0.0000",
+        "0.0896",
+        "1"
+      ],
+      [
+        "E2",
+        "official",
+        "13",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.2879",
+        "0.5218",
+        "0.1903",
+        "0.0000",
+        "1"
+      ],
+      [
+        "E2",
+        "official",
+        "37",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.3817",
+        "0.5479",
+        "0.0705",
+        "0.0000",
+        "1"
+      ],
+      [
+        "E2",
+        "official",
+        "71",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.4635",
+        "0.5365",
+        "0.0000",
+        "0.0000",
+        "1"
+      ],
+      [
+        "E3",
+        "official",
+        "13",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.3002",
+        "0.4837",
+        "0.0000",
+        "0.2162",
+        "1"
+      ],
+      [
+        "E3",
+        "official",
+        "37",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.4428",
+        "0.4887",
+        "0.0000",
+        "0.0685",
+        "1"
+      ],
+      [
+        "E3",
+        "official",
+        "71",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.4901",
+        "0.5032",
+        "0.0067",
+        "0.0000",
+        "1"
+      ],
+      [
+        "P1",
+        "f1",
+        "13",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.2950",
+        "0.4975",
+        "0.0489",
+        "0.1585",
+        "1"
+      ],
+      [
+        "P1",
+        "f1",
+        "37",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.3447",
+        "0.5275",
+        "0.0068",
+        "0.1210",
+        "1"
+      ],
+      [
+        "P1",
+        "f1",
+        "71",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.3664",
+        "0.5167",
+        "0.0000",
+        "0.1170",
+        "1"
+      ],
+      [
+        "P1",
+        "f2",
+        "13",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.4454",
+        "0.4121",
+        "0.0000",
+        "0.1425",
+        "1"
+      ],
+      [
+        "P1",
+        "f2",
+        "37",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.4059",
+        "0.4013",
+        "0.1719",
+        "0.0209",
+        "1"
+      ],
+      [
+        "P1",
+        "f2",
+        "71",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.4549",
+        "0.5170",
+        "0.0281",
+        "0.0000",
+        "1"
+      ],
+      [
+        "P1",
+        "f3",
+        "13",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.7253",
+        "0.1761",
+        "0.0000",
+        "0.0987",
+        "1"
+      ],
+      [
+        "P1",
+        "f3",
+        "37",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.7994",
+        "0.0816",
+        "0.0000",
+        "0.1190",
+        "1"
+      ],
+      [
+        "P1",
+        "f3",
+        "71",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.7452",
+        "0.1859",
+        "0.0000",
+        "0.0689",
+        "1"
+      ],
+      [
+        "P2",
+        "f1",
+        "13",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.3234",
+        "0.6766",
+        "0.0000",
+        "0.0000",
+        "1"
+      ],
+      [
+        "P2",
+        "f1",
+        "37",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.3938",
+        "0.5648",
+        "0.0414",
+        "0.0000",
+        "1"
+      ],
+      [
+        "P2",
+        "f1",
+        "71",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.3450",
+        "0.6550",
+        "0.0000",
+        "0.0000",
+        "1"
+      ],
+      [
+        "P2",
+        "f2",
+        "13",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.4602",
+        "0.5208",
+        "0.0191",
+        "0.0000",
+        "1"
+      ],
+      [
+        "P2",
+        "f2",
+        "37",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.4851",
+        "0.5058",
+        "0.0041",
+        "0.0050",
+        "1"
+      ],
+      [
+        "P2",
+        "f2",
+        "71",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.4646",
+        "0.5321",
+        "0.0033",
+        "0.0000",
+        "1"
+      ],
+      [
+        "P2",
+        "f3",
+        "13",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.6908",
+        "0.3068",
+        "0.0000",
+        "0.0024",
+        "1"
+      ],
+      [
+        "P2",
+        "f3",
+        "37",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.6651",
+        "0.3279",
+        "0.0000",
+        "0.0070",
+        "1"
+      ],
+      [
+        "P2",
+        "f3",
+        "71",
+        "0.25",
+        "100",
+        "Stored binary self-overlap",
+        "0.5680",
+        "0.2234",
+        "0.0000",
+        "0.2086",
+        "1"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      0.7264705882352941,
+      0.5588235294117647,
+      0.6147058823529412,
+      0.6705882352941177,
+      1.914705882352941,
+      1.1176470588235294,
+      1.1176470588235294,
+      0.7264705882352941,
+      0.8382352941176471,
+      0.6147058823529412
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 2.5,
+    "notes": [],
+    "aliases": [
+      {
+        "row": 1,
+        "column": 5,
+        "old": "self_dice_risk_multiclass",
+        "new": "Custom multiclass self-overlap"
+      },
+      {
+        "row": 2,
+        "column": 5,
+        "old": "self_dice_risk_multiclass",
+        "new": "Custom multiclass self-overlap"
+      },
+      {
+        "row": 3,
+        "column": 5,
+        "old": "self_dice_risk_multiclass",
+        "new": "Custom multiclass self-overlap"
+      },
+      {
+        "row": 4,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 5,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 6,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 7,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 8,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 9,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 10,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 11,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 12,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 13,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 14,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 15,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 16,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 17,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 18,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 19,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 20,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 21,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 22,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 23,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 24,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 25,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 26,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 27,
+        "column": 5,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      }
+    ]
+  },
+  {
+    "document": "Supplementary",
+    "number": 3,
+    "caption": "Supplementary Table S3. Calibration-event paired AURC effects by evaluation functional.",
+    "cells": [
+      [
+        "Block",
+        "Endpoint",
+        "Mean delta",
+        "SD",
+        "Held-event\ndiagnostics",
+        "Diagnostics\nfavoring ridge"
+      ],
+      [
+        "P1",
+        "Fixed-class pooled mIoU",
+        "−0.0229",
+        "0.0328",
+        "33",
+        "28"
+      ],
+      [
+        "P1",
+        "Foreground Dice",
+        "−0.0020",
+        "0.0523",
+        "33",
+        "19"
+      ],
+      [
+        "P1",
+        "Foreground IoU",
+        "−0.0075",
+        "0.0597",
+        "33",
+        "19"
+      ],
+      [
+        "P1",
+        "Present-class pooled mIoU",
+        "−0.0229",
+        "0.0328",
+        "33",
+        "28"
+      ],
+      [
+        "P1",
+        "Tile-mean mIoU",
+        "−0.0005",
+        "0.0303",
+        "33",
+        "21"
+      ],
+      [
+        "P2",
+        "Fixed-class pooled mIoU",
+        "−0.0408",
+        "0.0389",
+        "33",
+        "33"
+      ],
+      [
+        "P2",
+        "Foreground Dice",
+        "−0.0270",
+        "0.0541",
+        "33",
+        "25"
+      ],
+      [
+        "P2",
+        "Foreground IoU",
+        "−0.0303",
+        "0.0607",
+        "33",
+        "26"
+      ],
+      [
+        "P2",
+        "Present-class pooled mIoU",
+        "−0.0408",
+        "0.0389",
+        "33",
+        "33"
+      ],
+      [
+        "P2",
+        "Tile-mean mIoU",
+        "−0.0030",
+        "0.0281",
+        "33",
+        "19"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      3.394318181818182,
+      1.133522727272727,
+      0.9715909090909091,
+      1.565340909090909,
+      1.8352272727272725
+    ],
+    "font_size": 10,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "The 33 held-event diagnostics per block share events, seeds and fitted models. SD and directional counts describe the observed records; they are not independent-replication inference."
+    ],
+    "aliases": [
+      {
+        "row": 1,
+        "column": 1,
+        "old": "fixed_full_event_class_miou_risk",
+        "new": "Fixed-class pooled mIoU"
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "old": "foreground_dice_risk",
+        "new": "Foreground Dice"
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "old": "foreground_iou_risk",
+        "new": "Foreground IoU"
+      },
+      {
+        "row": 4,
+        "column": 1,
+        "old": "present_class_miou_risk",
+        "new": "Present-class pooled mIoU"
+      },
+      {
+        "row": 5,
+        "column": 1,
+        "old": "tile_mean_present_class_miou_risk",
+        "new": "Tile-mean mIoU"
+      },
+      {
+        "row": 6,
+        "column": 1,
+        "old": "fixed_full_event_class_miou_risk",
+        "new": "Fixed-class pooled mIoU"
+      },
+      {
+        "row": 7,
+        "column": 1,
+        "old": "foreground_dice_risk",
+        "new": "Foreground Dice"
+      },
+      {
+        "row": 8,
+        "column": 1,
+        "old": "foreground_iou_risk",
+        "new": "Foreground IoU"
+      },
+      {
+        "row": 9,
+        "column": 1,
+        "old": "present_class_miou_risk",
+        "new": "Present-class pooled mIoU"
+      },
+      {
+        "row": 10,
+        "column": 1,
+        "old": "tile_mean_present_class_miou_risk",
+        "new": "Tile-mean mIoU"
+      }
+    ]
+  },
+  {
+    "document": "Supplementary",
+    "number": 4,
+    "caption": "Supplementary Table S4. Test paired AURC effects by subset and evaluation endpoint.",
+    "cells": [
+      [
+        "Block",
+        "Subset",
+        "Endpoint",
+        "Mean delta",
+        "SD",
+        "Runs favoring v2",
+        "Runs"
+      ],
+      [
+        "P1",
+        "All tiles",
+        "Fixed-class pooled mIoU",
+        "−0.0343",
+        "0.0162",
+        "9",
+        "9"
+      ],
+      [
+        "P1",
+        "All tiles",
+        "Foreground Dice",
+        "−0.0132",
+        "0.0174",
+        "7",
+        "9"
+      ],
+      [
+        "P1",
+        "All tiles",
+        "Foreground IoU",
+        "−0.0155",
+        "0.0196",
+        "7",
+        "9"
+      ],
+      [
+        "P1",
+        "All tiles",
+        "Present-class pooled mIoU",
+        "−0.0343",
+        "0.0162",
+        "9",
+        "9"
+      ],
+      [
+        "P2",
+        "All tiles",
+        "Fixed-class pooled mIoU",
+        "−0.0400",
+        "0.0148",
+        "9",
+        "9"
+      ],
+      [
+        "P2",
+        "All tiles",
+        "Foreground Dice",
+        "−0.0197",
+        "0.0134",
+        "9",
+        "9"
+      ],
+      [
+        "P2",
+        "All tiles",
+        "Foreground IoU",
+        "−0.0236",
+        "0.0140",
+        "9",
+        "9"
+      ],
+      [
+        "P2",
+        "All tiles",
+        "Present-class pooled mIoU",
+        "−0.0400",
+        "0.0148",
+        "9",
+        "9"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      1.2011494252873565,
+      3.2218390804597705,
+      1.2011494252873565,
+      0.9827586206896554,
+      1.6379310344827587,
+      0.6551724137931035
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 4.5,
+    "notes": [],
+    "aliases": [
+      {
+        "row": 1,
+        "column": 1,
+        "old": "all_tiles",
+        "new": "All tiles"
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "old": "fixed_full_event_class_miou_risk",
+        "new": "Fixed-class pooled mIoU"
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "old": "all_tiles",
+        "new": "All tiles"
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "old": "foreground_dice_risk",
+        "new": "Foreground Dice"
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "old": "all_tiles",
+        "new": "All tiles"
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "old": "foreground_iou_risk",
+        "new": "Foreground IoU"
+      },
+      {
+        "row": 4,
+        "column": 1,
+        "old": "all_tiles",
+        "new": "All tiles"
+      },
+      {
+        "row": 4,
+        "column": 2,
+        "old": "present_class_miou_risk",
+        "new": "Present-class pooled mIoU"
+      },
+      {
+        "row": 5,
+        "column": 1,
+        "old": "all_tiles",
+        "new": "All tiles"
+      },
+      {
+        "row": 5,
+        "column": 2,
+        "old": "fixed_full_event_class_miou_risk",
+        "new": "Fixed-class pooled mIoU"
+      },
+      {
+        "row": 6,
+        "column": 1,
+        "old": "all_tiles",
+        "new": "All tiles"
+      },
+      {
+        "row": 6,
+        "column": 2,
+        "old": "foreground_dice_risk",
+        "new": "Foreground Dice"
+      },
+      {
+        "row": 7,
+        "column": 1,
+        "old": "all_tiles",
+        "new": "All tiles"
+      },
+      {
+        "row": 7,
+        "column": 2,
+        "old": "foreground_iou_risk",
+        "new": "Foreground IoU"
+      },
+      {
+        "row": 8,
+        "column": 1,
+        "old": "all_tiles",
+        "new": "All tiles"
+      },
+      {
+        "row": 8,
+        "column": 2,
+        "old": "present_class_miou_risk",
+        "new": "Present-class pooled mIoU"
+      }
+    ]
+  },
+  {
+    "document": "Supplementary",
+    "number": 5,
+    "caption": "Supplementary Table S5. Within-event score correlations with error and foreground content.",
+    "cells": [
+      [
+        "Block",
+        "Score",
+        "Outcome",
+        "Mean rho",
+        "SD",
+        "Median",
+        "Min",
+        "Max",
+        "N"
+      ],
+      [
+        "P1",
+        "GeoRisk v2",
+        "Predicted foreground fraction",
+        "−0.1213",
+        "0.5517",
+        "−0.1828",
+        "−0.8711",
+        "0.7571",
+        "33"
+      ],
+      [
+        "P1",
+        "GeoRisk v2",
+        "Reference foreground fraction",
+        "−0.0658",
+        "0.4444",
+        "−0.1778",
+        "−0.6983",
+        "0.8250",
+        "33"
+      ],
+      [
+        "P1",
+        "GeoRisk v2",
+        "Tile mIoU loss",
+        "0.4072",
+        "0.3642",
+        "0.4736",
+        "−0.4297",
+        "0.8600",
+        "33"
+      ],
+      [
+        "P1",
+        "Predicted foreground fraction",
+        "Predicted foreground fraction",
+        "1.0000",
+        "0.0000",
+        "1.0000",
+        "1.0000",
+        "1.0000",
+        "33"
+      ],
+      [
+        "P1",
+        "Predicted foreground fraction",
+        "Reference foreground fraction",
+        "0.7367",
+        "0.1734",
+        "0.7488",
+        "0.4000",
+        "0.9750",
+        "33"
+      ],
+      [
+        "P1",
+        "Predicted foreground fraction",
+        "Tile mIoU loss",
+        "−0.1939",
+        "0.4378",
+        "−0.3542",
+        "−0.7455",
+        "0.7525",
+        "33"
+      ],
+      [
+        "P1",
+        "Foreground scarcity",
+        "Predicted foreground fraction",
+        "−1.0000",
+        "0.0000",
+        "−1.0000",
+        "−1.0000",
+        "−1.0000",
+        "33"
+      ],
+      [
+        "P1",
+        "Foreground scarcity",
+        "Reference foreground fraction",
+        "−0.7367",
+        "0.1734",
+        "−0.7488",
+        "−0.9750",
+        "−0.4000",
+        "33"
+      ],
+      [
+        "P1",
+        "Foreground scarcity",
+        "Tile mIoU loss",
+        "0.1939",
+        "0.4378",
+        "0.3542",
+        "−0.7525",
+        "0.7455",
+        "33"
+      ],
+      [
+        "P1",
+        "Stored binary self-overlap",
+        "Predicted foreground fraction",
+        "−0.9212",
+        "0.0576",
+        "−0.9401",
+        "−0.9835",
+        "−0.7436",
+        "33"
+      ],
+      [
+        "P1",
+        "Stored binary self-overlap",
+        "Reference foreground fraction",
+        "−0.7002",
+        "0.1748",
+        "−0.7036",
+        "−0.9560",
+        "−0.3149",
+        "33"
+      ],
+      [
+        "P1",
+        "Stored binary self-overlap",
+        "Tile mIoU loss",
+        "0.3528",
+        "0.4674",
+        "0.5854",
+        "−0.6896",
+        "0.8345",
+        "33"
+      ],
+      [
+        "P2",
+        "GeoRisk v2",
+        "Predicted foreground fraction",
+        "−0.1641",
+        "0.4649",
+        "−0.1021",
+        "−0.8660",
+        "0.7357",
+        "33"
+      ],
+      [
+        "P2",
+        "GeoRisk v2",
+        "Reference foreground fraction",
+        "−0.1069",
+        "0.4132",
+        "−0.2092",
+        "−0.6925",
+        "0.8000",
+        "33"
+      ],
+      [
+        "P2",
+        "GeoRisk v2",
+        "Tile mIoU loss",
+        "0.4111",
+        "0.2544",
+        "0.4763",
+        "−0.3994",
+        "0.7172",
+        "33"
+      ],
+      [
+        "P2",
+        "Predicted foreground fraction",
+        "Predicted foreground fraction",
+        "1.0000",
+        "0.0000",
+        "1.0000",
+        "1.0000",
+        "1.0000",
+        "33"
+      ],
+      [
+        "P2",
+        "Predicted foreground fraction",
+        "Reference foreground fraction",
+        "0.7783",
+        "0.1203",
+        "0.7858",
+        "0.5483",
+        "0.9720",
+        "33"
+      ],
+      [
+        "P2",
+        "Predicted foreground fraction",
+        "Tile mIoU loss",
+        "−0.2035",
+        "0.3860",
+        "−0.3188",
+        "−0.6654",
+        "0.6930",
+        "33"
+      ],
+      [
+        "P2",
+        "Foreground scarcity",
+        "Predicted foreground fraction",
+        "−1.0000",
+        "0.0000",
+        "−1.0000",
+        "−1.0000",
+        "−1.0000",
+        "33"
+      ],
+      [
+        "P2",
+        "Foreground scarcity",
+        "Reference foreground fraction",
+        "−0.7783",
+        "0.1203",
+        "−0.7858",
+        "−0.9720",
+        "−0.5483",
+        "33"
+      ],
+      [
+        "P2",
+        "Foreground scarcity",
+        "Tile mIoU loss",
+        "0.2035",
+        "0.3860",
+        "0.3188",
+        "−0.6930",
+        "0.6654",
+        "33"
+      ],
+      [
+        "P2",
+        "Stored binary self-overlap",
+        "Predicted foreground fraction",
+        "−0.9355",
+        "0.0447",
+        "−0.9425",
+        "−0.9956",
+        "−0.7893",
+        "33"
+      ],
+      [
+        "P2",
+        "Stored binary self-overlap",
+        "Reference foreground fraction",
+        "−0.7271",
+        "0.1110",
+        "−0.7085",
+        "−0.9422",
+        "−0.5302",
+        "33"
+      ],
+      [
+        "P2",
+        "Stored binary self-overlap",
+        "Tile mIoU loss",
+        "0.3421",
+        "0.3974",
+        "0.4854",
+        "−0.6087",
+        "0.7949",
+        "33"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      2.1923076923076925,
+      2.218681318681319,
+      0.8873626373626373,
+      0.782967032967033,
+      0.782967032967033,
+      0.782967032967033,
+      0.782967032967033,
+      0.46978021978021983
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 2.5,
+    "notes": [],
+    "aliases": [
+      {
+        "row": 1,
+        "column": 1,
+        "old": "georisk_v2",
+        "new": "GeoRisk v2"
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "old": "georisk_v2",
+        "new": "GeoRisk v2"
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "old": "reference_foreground_fraction",
+        "new": "Reference foreground fraction"
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "old": "georisk_v2",
+        "new": "GeoRisk v2"
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "old": "tile_loss",
+        "new": "Tile mIoU loss"
+      },
+      {
+        "row": 4,
+        "column": 1,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 4,
+        "column": 2,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 5,
+        "column": 1,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 5,
+        "column": 2,
+        "old": "reference_foreground_fraction",
+        "new": "Reference foreground fraction"
+      },
+      {
+        "row": 6,
+        "column": 1,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 6,
+        "column": 2,
+        "old": "tile_loss",
+        "new": "Tile mIoU loss"
+      },
+      {
+        "row": 7,
+        "column": 1,
+        "old": "predicted_foreground_scarcity",
+        "new": "Foreground scarcity"
+      },
+      {
+        "row": 7,
+        "column": 2,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 8,
+        "column": 1,
+        "old": "predicted_foreground_scarcity",
+        "new": "Foreground scarcity"
+      },
+      {
+        "row": 8,
+        "column": 2,
+        "old": "reference_foreground_fraction",
+        "new": "Reference foreground fraction"
+      },
+      {
+        "row": 9,
+        "column": 1,
+        "old": "predicted_foreground_scarcity",
+        "new": "Foreground scarcity"
+      },
+      {
+        "row": 9,
+        "column": 2,
+        "old": "tile_loss",
+        "new": "Tile mIoU loss"
+      },
+      {
+        "row": 10,
+        "column": 1,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 10,
+        "column": 2,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 11,
+        "column": 1,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 11,
+        "column": 2,
+        "old": "reference_foreground_fraction",
+        "new": "Reference foreground fraction"
+      },
+      {
+        "row": 12,
+        "column": 1,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 12,
+        "column": 2,
+        "old": "tile_loss",
+        "new": "Tile mIoU loss"
+      },
+      {
+        "row": 13,
+        "column": 1,
+        "old": "georisk_v2",
+        "new": "GeoRisk v2"
+      },
+      {
+        "row": 13,
+        "column": 2,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 14,
+        "column": 1,
+        "old": "georisk_v2",
+        "new": "GeoRisk v2"
+      },
+      {
+        "row": 14,
+        "column": 2,
+        "old": "reference_foreground_fraction",
+        "new": "Reference foreground fraction"
+      },
+      {
+        "row": 15,
+        "column": 1,
+        "old": "georisk_v2",
+        "new": "GeoRisk v2"
+      },
+      {
+        "row": 15,
+        "column": 2,
+        "old": "tile_loss",
+        "new": "Tile mIoU loss"
+      },
+      {
+        "row": 16,
+        "column": 1,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 16,
+        "column": 2,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 17,
+        "column": 1,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 17,
+        "column": 2,
+        "old": "reference_foreground_fraction",
+        "new": "Reference foreground fraction"
+      },
+      {
+        "row": 18,
+        "column": 1,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 18,
+        "column": 2,
+        "old": "tile_loss",
+        "new": "Tile mIoU loss"
+      },
+      {
+        "row": 19,
+        "column": 1,
+        "old": "predicted_foreground_scarcity",
+        "new": "Foreground scarcity"
+      },
+      {
+        "row": 19,
+        "column": 2,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 20,
+        "column": 1,
+        "old": "predicted_foreground_scarcity",
+        "new": "Foreground scarcity"
+      },
+      {
+        "row": 20,
+        "column": 2,
+        "old": "reference_foreground_fraction",
+        "new": "Reference foreground fraction"
+      },
+      {
+        "row": 21,
+        "column": 1,
+        "old": "predicted_foreground_scarcity",
+        "new": "Foreground scarcity"
+      },
+      {
+        "row": 21,
+        "column": 2,
+        "old": "tile_loss",
+        "new": "Tile mIoU loss"
+      },
+      {
+        "row": 22,
+        "column": 1,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 22,
+        "column": 2,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 23,
+        "column": 1,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 23,
+        "column": 2,
+        "old": "reference_foreground_fraction",
+        "new": "Reference foreground fraction"
+      },
+      {
+        "row": 24,
+        "column": 1,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 24,
+        "column": 2,
+        "old": "tile_loss",
+        "new": "Tile mIoU loss"
+      }
+    ]
+  },
+  {
+    "document": "Supplementary",
+    "number": 6,
+    "caption": "Supplementary Table S6. Tile, valid-pixel and hazard coverage at nominal 0.80 tile coverage.",
+    "cells": [
+      [
+        "Block",
+        "Score",
+        "Event\nruns",
+        "Tile cov.",
+        "Valid-pixel cov.",
+        "Mean hazard cov.",
+        "Median hazard cov.",
+        "Hazard minus count",
+        "Below-null p<0.05"
+      ],
+      [
+        "P1",
+        "GeoRisk v2",
+        "33",
+        "0.8098",
+        "0.8179",
+        "0.7133",
+        "0.7419",
+        "−0.0965",
+        "13"
+      ],
+      [
+        "P1",
+        "Predicted foreground fraction",
+        "33",
+        "0.8098",
+        "0.8135",
+        "0.4420",
+        "0.4042",
+        "−0.3678",
+        "25"
+      ],
+      [
+        "P1",
+        "Foreground scarcity",
+        "33",
+        "0.8098",
+        "0.8053",
+        "0.9543",
+        "0.9916",
+        "0.1445",
+        "2"
+      ],
+      [
+        "P1",
+        "Stored binary self-overlap",
+        "33",
+        "0.8098",
+        "0.8015",
+        "0.9490",
+        "0.9885",
+        "0.1392",
+        "2"
+      ],
+      [
+        "P2",
+        "GeoRisk v2",
+        "33",
+        "0.8098",
+        "0.8206",
+        "0.7980",
+        "0.8730",
+        "−0.0119",
+        "8"
+      ],
+      [
+        "P2",
+        "Predicted foreground fraction",
+        "33",
+        "0.8098",
+        "0.8095",
+        "0.3893",
+        "0.3873",
+        "−0.4205",
+        "29"
+      ],
+      [
+        "P2",
+        "Foreground scarcity",
+        "33",
+        "0.8098",
+        "0.8137",
+        "0.9794",
+        "0.9850",
+        "0.1696",
+        "0"
+      ],
+      [
+        "P2",
+        "Stored binary self-overlap",
+        "33",
+        "0.8098",
+        "0.8116",
+        "0.9786",
+        "0.9850",
+        "0.1688",
+        "0"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      2.1,
+      0.65,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.2,
+      0.9500000000000001
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 4.5,
+    "notes": [],
+    "aliases": [
+      {
+        "row": 1,
+        "column": 1,
+        "old": "georisk_v2",
+        "new": "GeoRisk v2"
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "old": "predicted_foreground_scarcity",
+        "new": "Foreground scarcity"
+      },
+      {
+        "row": 4,
+        "column": 1,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      },
+      {
+        "row": 5,
+        "column": 1,
+        "old": "georisk_v2",
+        "new": "GeoRisk v2"
+      },
+      {
+        "row": 6,
+        "column": 1,
+        "old": "predicted_foreground_fraction",
+        "new": "Predicted foreground fraction"
+      },
+      {
+        "row": 7,
+        "column": 1,
+        "old": "predicted_foreground_scarcity",
+        "new": "Foreground scarcity"
+      },
+      {
+        "row": 8,
+        "column": 1,
+        "old": "soft_dice_risk_binary",
+        "new": "Stored binary self-overlap"
+      }
+    ]
+  },
+  {
+    "document": "Supplementary",
+    "number": 7,
+    "caption": "Supplementary Table S7. Calibration-threshold coverage and selective risk for every run.",
+    "cells": [
+      [
+        "Block",
+        "Partition",
+        "Seed",
+        "Target cov.",
+        "Realized cov.",
+        "Signed error",
+        "Abs. error",
+        "Selective risk",
+        "Worst-event risk"
+      ],
+      [
+        "E1",
+        "official",
+        "13",
+        "0.8",
+        "0.8662",
+        "0.0662",
+        "0.0662",
+        "0.3604",
+        "0.5327"
+      ],
+      [
+        "E1",
+        "official",
+        "37",
+        "0.8",
+        "0.7101",
+        "−0.0899",
+        "0.0899",
+        "0.2745",
+        "0.4342"
+      ],
+      [
+        "E1",
+        "official",
+        "71",
+        "0.8",
+        "0.7556",
+        "−0.0444",
+        "0.0444",
+        "0.3683",
+        "0.6271"
+      ],
+      [
+        "E2",
+        "official",
+        "13",
+        "0.8",
+        "0.7833",
+        "−0.0167",
+        "0.0167",
+        "0.1167",
+        "0.1167"
+      ],
+      [
+        "E2",
+        "official",
+        "37",
+        "0.8",
+        "0.8250",
+        "0.0250",
+        "0.0250",
+        "0.1183",
+        "0.1183"
+      ],
+      [
+        "E2",
+        "official",
+        "71",
+        "0.8",
+        "0.8167",
+        "0.0167",
+        "0.0167",
+        "0.0790",
+        "0.0790"
+      ],
+      [
+        "E3",
+        "official",
+        "13",
+        "0.8",
+        "0.6917",
+        "−0.1083",
+        "0.1083",
+        "0.2681",
+        "0.2681"
+      ],
+      [
+        "E3",
+        "official",
+        "37",
+        "0.8",
+        "0.7750",
+        "−0.0250",
+        "0.0250",
+        "0.1518",
+        "0.1518"
+      ],
+      [
+        "E3",
+        "official",
+        "71",
+        "0.8",
+        "0.7500",
+        "−0.0500",
+        "0.0500",
+        "0.1202",
+        "0.1202"
+      ],
+      [
+        "P1",
+        "F1",
+        "13",
+        "0.8",
+        "0.8917",
+        "0.0917",
+        "0.0917",
+        "0.1617",
+        "0.2257"
+      ],
+      [
+        "P1",
+        "F1",
+        "37",
+        "0.8",
+        "0.8333",
+        "0.0333",
+        "0.0333",
+        "0.1624",
+        "0.2280"
+      ],
+      [
+        "P1",
+        "F1",
+        "71",
+        "0.8",
+        "0.8000",
+        "0.0000",
+        "0.0000",
+        "0.2024",
+        "0.2841"
+      ],
+      [
+        "P1",
+        "F2",
+        "13",
+        "0.8",
+        "0.8903",
+        "0.0903",
+        "0.0903",
+        "0.3346",
+        "0.4202"
+      ],
+      [
+        "P1",
+        "F2",
+        "37",
+        "0.8",
+        "0.7992",
+        "−0.0008",
+        "0.0008",
+        "0.2970",
+        "0.3563"
+      ],
+      [
+        "P1",
+        "F2",
+        "71",
+        "0.8",
+        "0.8066",
+        "0.0066",
+        "0.0066",
+        "0.3261",
+        "0.4237"
+      ],
+      [
+        "P1",
+        "F3",
+        "13",
+        "0.8",
+        "0.7679",
+        "−0.0321",
+        "0.0321",
+        "0.3564",
+        "0.5389"
+      ],
+      [
+        "P1",
+        "F3",
+        "37",
+        "0.8",
+        "0.7205",
+        "−0.0795",
+        "0.0795",
+        "0.3195",
+        "0.5028"
+      ],
+      [
+        "P1",
+        "F3",
+        "71",
+        "0.8",
+        "0.5392",
+        "−0.2608",
+        "0.2608",
+        "0.2641",
+        "0.4600"
+      ],
+      [
+        "P2",
+        "F1",
+        "13",
+        "0.8",
+        "0.7194",
+        "−0.0806",
+        "0.0806",
+        "0.1835",
+        "0.2365"
+      ],
+      [
+        "P2",
+        "F1",
+        "37",
+        "0.8",
+        "0.8250",
+        "0.0250",
+        "0.0250",
+        "0.2039",
+        "0.2474"
+      ],
+      [
+        "P2",
+        "F1",
+        "71",
+        "0.8",
+        "0.6944",
+        "−0.1056",
+        "0.1056",
+        "0.1799",
+        "0.2936"
+      ],
+      [
+        "P2",
+        "F2",
+        "13",
+        "0.8",
+        "0.9333",
+        "0.1333",
+        "0.1333",
+        "0.3079",
+        "0.4193"
+      ],
+      [
+        "P2",
+        "F2",
+        "37",
+        "0.8",
+        "0.9048",
+        "0.1048",
+        "0.1048",
+        "0.3050",
+        "0.4070"
+      ],
+      [
+        "P2",
+        "F2",
+        "71",
+        "0.8",
+        "0.8928",
+        "0.0928",
+        "0.0928",
+        "0.3194",
+        "0.4422"
+      ],
+      [
+        "P2",
+        "F3",
+        "13",
+        "0.8",
+        "0.7132",
+        "−0.0868",
+        "0.0868",
+        "0.3542",
+        "0.4283"
+      ],
+      [
+        "P2",
+        "F3",
+        "37",
+        "0.8",
+        "0.7407",
+        "−0.0593",
+        "0.0593",
+        "0.3780",
+        "0.4869"
+      ],
+      [
+        "P2",
+        "F3",
+        "71",
+        "0.8",
+        "0.9030",
+        "0.1030",
+        "0.1030",
+        "0.3625",
+        "0.5204"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      0.7661290322580645,
+      0.5618279569892474,
+      1.0725806451612903,
+      1.1236559139784947,
+      1.1236559139784947,
+      1.1236559139784947,
+      1.532258064516129,
+      1.596236559139785
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 2.5,
+    "notes": [],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 8,
+    "caption": "Supplementary Table S8. Kuro Siwo test-event composition and paired AURC effects.",
+    "cells": [
+      [
+        "Event",
+        "Flood date",
+        "Tiles",
+        "AOIs",
+        "Mean lon",
+        "Mean lat",
+        "Water %",
+        "Flood %",
+        "v2 AURC",
+        "Self-overlap AURC",
+        "Delta",
+        "Seed wins"
+      ],
+      [
+        "205",
+        "2017-05-24 18:30:00",
+        "16",
+        "4",
+        "80.2735",
+        "6.6696",
+        "0.3787",
+        "2.7711",
+        "0.2959",
+        "0.2950",
+        "0.0009",
+        "0"
+      ],
+      [
+        "277",
+        "2018-03-27 15:00:00",
+        "259",
+        "3",
+        "26.4185",
+        "41.2846",
+        "1.1611",
+        "5.2926",
+        "0.2428",
+        "0.2397",
+        "0.0031",
+        "0"
+      ],
+      [
+        "321",
+        "2018-10-06 03:00:00",
+        "56",
+        "4",
+        "−87.2888",
+        "13.3189",
+        "2.2814",
+        "6.6563",
+        "0.3880",
+        "0.3822",
+        "0.0058",
+        "1"
+      ],
+      [
+        "411",
+        "2019-11-23 20:30:00",
+        "11",
+        "1",
+        "6.6347",
+        "43.4653",
+        "0.0013",
+        "0.2772",
+        "0.1721",
+        "0.1721",
+        "0.0000",
+        "0"
+      ],
+      [
+        "445",
+        "2020-06-26 08:00:00",
+        "59",
+        "1",
+        "26.5018",
+        "48.2268",
+        "1.5788",
+        "2.0912",
+        "0.2752",
+        "0.2711",
+        "0.0041",
+        "1"
+      ],
+      [
+        "561",
+        "2022-01-24 12:00:00",
+        "7",
+        "1",
+        "34.7944",
+        "−16.0402",
+        "3.6127",
+        "9.9197",
+        "0.1745",
+        "0.1801",
+        "−0.0056",
+        "1"
+      ],
+      [
+        "562",
+        "2022-01-29 07:00:00",
+        "8",
+        "1",
+        "139.4889",
+        "−17.7027",
+        "3.0057",
+        "6.2595",
+        "0.3388",
+        "0.3373",
+        "0.0015",
+        "1"
+      ],
+      [
+        "1111002",
+        "2020-09-14 08:00:00",
+        "7",
+        "1",
+        "14.8817",
+        "12.2254",
+        "3.0054",
+        "6.0282",
+        "0.3139",
+        "0.3139",
+        "−0.0000",
+        "1"
+      ],
+      [
+        "1111007",
+        "2019-09-17 08:00:00",
+        "480",
+        "1",
+        "85.6354",
+        "25.5527",
+        "4.5693",
+        "6.4392",
+        "0.3311",
+        "0.3272",
+        "0.0039",
+        "1"
+      ],
+      [
+        "1111013",
+        "2017-05-03 08:00:00",
+        "1097",
+        "1",
+        "−90.1646",
+        "38.3494",
+        "1.6072",
+        "3.5788",
+        "0.4386",
+        "0.4348",
+        "0.0038",
+        "1"
+      ]
+    ],
+    "widths_inches": [
+      0.8,
+      1.0892045454545456,
+      0.5397727272727273,
+      0.5397727272727273,
+      0.7556818181818182,
+      0.7556818181818182,
+      0.7556818181818182,
+      0.7556818181818182,
+      0.9176136363636364,
+      1.0255681818181819,
+      0.809659090909091,
+      0.7556818181818182
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 4.5,
+    "notes": [],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 9,
+    "caption": "Supplementary Table S9. Kuro Siwo multiclass endpoint and comparator sensitivity.",
+    "cells": [
+      [
+        "Endpoint",
+        "Comparison",
+        "Mean delta",
+        "SD",
+        "Minimum",
+        "Maximum",
+        "Seeds favoring v2",
+        "Seeds"
+      ],
+      [
+        "Fixed-class pooled mIoU",
+        "v2 − custom multiclass self-overlap",
+        "0.0009",
+        "0.0010",
+        "0.0002",
+        "0.0020",
+        "0",
+        "3"
+      ],
+      [
+        "Fixed-class pooled mIoU",
+        "v2 − label-informed tile loss",
+        "0.0528",
+        "0.0186",
+        "0.0403",
+        "0.0742",
+        "0",
+        "3"
+      ],
+      [
+        "Flood IoU",
+        "v2 − custom multiclass self-overlap",
+        "0.0030",
+        "0.0015",
+        "0.0014",
+        "0.0042",
+        "0",
+        "3"
+      ],
+      [
+        "Flood IoU",
+        "v2 − label-informed tile loss",
+        "0.0755",
+        "0.0346",
+        "0.0477",
+        "0.1142",
+        "0",
+        "3"
+      ],
+      [
+        "Permanent-water IoU",
+        "v2 − custom multiclass self-overlap",
+        "0.0007",
+        "0.0011",
+        "−0.0002",
+        "0.0019",
+        "1",
+        "3"
+      ],
+      [
+        "Permanent-water IoU",
+        "v2 − label-informed tile loss",
+        "0.0830",
+        "0.0219",
+        "0.0677",
+        "0.1081",
+        "0",
+        "3"
+      ],
+      [
+        "Present-class pooled mIoU",
+        "v2 − custom multiclass self-overlap",
+        "0.0018",
+        "0.0014",
+        "0.0003",
+        "0.0030",
+        "0",
+        "3"
+      ],
+      [
+        "Present-class pooled mIoU",
+        "v2 − label-informed tile loss",
+        "0.1014",
+        "0.0511",
+        "0.0567",
+        "0.1571",
+        "0",
+        "3"
+      ]
+    ],
+    "widths_inches": [
+      2.196236559139785,
+      2.2983870967741935,
+      0.868279569892473,
+      0.7661290322580645,
+      0.868279569892473,
+      0.868279569892473,
+      1.0725806451612903,
+      0.5618279569892474
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 4.5,
+    "notes": [],
+    "aliases": [
+      {
+        "row": 1,
+        "column": 0,
+        "old": "fixed_full_event_class_miou_risk",
+        "new": "Fixed-class pooled mIoU"
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "old": "georisk_v2_minus_self_dice_risk_multiclass",
+        "new": "v2 − custom multiclass self-overlap"
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "old": "fixed_full_event_class_miou_risk",
+        "new": "Fixed-class pooled mIoU"
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "old": "georisk_v2_minus_oracle_tile_loss",
+        "new": "v2 − label-informed tile loss"
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "old": "flood_iou_risk",
+        "new": "Flood IoU"
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "old": "georisk_v2_minus_self_dice_risk_multiclass",
+        "new": "v2 − custom multiclass self-overlap"
+      },
+      {
+        "row": 4,
+        "column": 0,
+        "old": "flood_iou_risk",
+        "new": "Flood IoU"
+      },
+      {
+        "row": 4,
+        "column": 1,
+        "old": "georisk_v2_minus_oracle_tile_loss",
+        "new": "v2 − label-informed tile loss"
+      },
+      {
+        "row": 5,
+        "column": 0,
+        "old": "permanent_water_iou_risk",
+        "new": "Permanent-water IoU"
+      },
+      {
+        "row": 5,
+        "column": 1,
+        "old": "georisk_v2_minus_self_dice_risk_multiclass",
+        "new": "v2 − custom multiclass self-overlap"
+      },
+      {
+        "row": 6,
+        "column": 0,
+        "old": "permanent_water_iou_risk",
+        "new": "Permanent-water IoU"
+      },
+      {
+        "row": 6,
+        "column": 1,
+        "old": "georisk_v2_minus_oracle_tile_loss",
+        "new": "v2 − label-informed tile loss"
+      },
+      {
+        "row": 7,
+        "column": 0,
+        "old": "present_class_miou_risk",
+        "new": "Present-class pooled mIoU"
+      },
+      {
+        "row": 7,
+        "column": 1,
+        "old": "georisk_v2_minus_self_dice_risk_multiclass",
+        "new": "v2 − custom multiclass self-overlap"
+      },
+      {
+        "row": 8,
+        "column": 0,
+        "old": "present_class_miou_risk",
+        "new": "Present-class pooled mIoU"
+      },
+      {
+        "row": 8,
+        "column": 1,
+        "old": "georisk_v2_minus_oracle_tile_loss",
+        "new": "v2 − label-informed tile loss"
+      }
+    ]
+  },
+  {
+    "document": "Supplementary",
+    "number": 10,
+    "caption": "Supplementary Table S10. Same-comparator and strongest-comparator effects across study blocks.",
+    "cells": [
+      [
+        "Block",
+        "v2",
+        "Self-\noverlap",
+        "Delta vs self",
+        "Wins vs self",
+        "Strongest comparator",
+        "Comparator AURC",
+        "Delta vs strongest",
+        "Wins vs strongest"
+      ],
+      [
+        "P1",
+        "0.2250",
+        "0.2593",
+        "−0.0343",
+        "9/9",
+        "Soft Dice-style self-overlap",
+        "0.2593",
+        "−0.0343",
+        "9/9"
+      ],
+      [
+        "P2",
+        "0.2384",
+        "0.2783",
+        "−0.0400",
+        "9/9",
+        "Soft Dice-style self-overlap",
+        "0.2783",
+        "−0.0400",
+        "9/9"
+      ],
+      [
+        "E1",
+        "0.2971",
+        "0.2953",
+        "0.0018",
+        "0/3",
+        "Multiclass self-overlap",
+        "0.2953",
+        "0.0018",
+        "0/3"
+      ],
+      [
+        "E2",
+        "0.0769",
+        "0.0990",
+        "−0.0221",
+        "3/3",
+        "Uncertainty + shift",
+        "0.0796",
+        "−0.0027",
+        "2/3"
+      ],
+      [
+        "E3",
+        "0.1384",
+        "0.1971",
+        "−0.0587",
+        "3/3",
+        "Uncertainty + shift",
+        "0.1600",
+        "−0.0216",
+        "3/3"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      0.7264705882352941,
+      0.8941176470588236,
+      0.95,
+      0.8941176470588236,
+      2.1941176470588237,
+      1.061764705882353,
+      1.173529411764706,
+      1.0058823529411764
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 4.5,
+    "notes": [],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 11,
+    "caption": "Supplementary Table S11. Scores, routing and geographic content of all 18 NGA case tiles.",
+    "cells": [
+      [
+        "Tile",
+        "Risk",
+        "Loss",
+        "Queue",
+        "Centroid (lon, lat)",
+        "Bounds (W, S, E, N)",
+        "Valid pixels",
+        "Confusion (TN/FP/FN/TP)"
+      ],
+      [
+        "Nigeria_1095404",
+        "0.5340",
+        "0.2112",
+        "Retained",
+        "5.6802, 8.7618",
+        "5.6572, 8.7388, 5.7032, 8.7848",
+        "252283",
+        "200335/5857/11862/34229"
+      ],
+      [
+        "Nigeria_143329",
+        "0.4096",
+        "0.3932",
+        "Retained",
+        "5.7262, 9.4517",
+        "5.7032, 9.4287, 5.7492, 9.4747",
+        "249500",
+        "246642/81/2141/636"
+      ],
+      [
+        "Nigeria_22088",
+        "0.4957",
+        "0.4633",
+        "Retained",
+        "5.8642, 9.8657",
+        "5.8412, 9.8427, 5.8872, 9.8887",
+        "209501",
+        "208758/573/113/57"
+      ],
+      [
+        "Nigeria_225131",
+        "0.4124",
+        "0.4056",
+        "Retained",
+        "5.6802, 9.4517",
+        "5.6572, 9.4287, 5.7032, 9.4747",
+        "241255",
+        "240031/93/895/236"
+      ],
+      [
+        "Nigeria_31096",
+        "0.3892",
+        "0.4095",
+        "Retained",
+        "5.9562, 8.5778",
+        "5.9332, 8.5548, 5.9792, 8.6008",
+        "217487",
+        "216117/554/561/255"
+      ],
+      [
+        "Nigeria_35845",
+        "0.3142",
+        "0.3610",
+        "Retained",
+        "5.6802, 8.5318",
+        "5.6572, 8.5088, 5.7032, 8.5548",
+        "213042",
+        "212602/154/163/123"
+      ],
+      [
+        "Nigeria_417184",
+        "0.6710",
+        "0.3625",
+        "Reviewed",
+        "5.9102, 9.6817",
+        "5.8872, 9.6587, 5.9332, 9.7047",
+        "50135",
+        "46827/1924/323/1061"
+      ],
+      [
+        "Nigeria_439488",
+        "0.4285",
+        "0.5035",
+        "Retained",
+        "5.6342, 8.9918",
+        "5.6112, 8.9688, 5.6572, 9.0148",
+        "229200",
+        "227583/149/1468/0"
+      ],
+      [
+        "Nigeria_529525",
+        "0.6987",
+        "0.5691",
+        "Reviewed",
+        "5.5882, 8.9458",
+        "5.5652, 8.9228, 5.6112, 8.9688",
+        "262144",
+        "38280/213/94935/128716"
+      ],
+      [
+        "Nigeria_598959",
+        "0.5751",
+        "0.5529",
+        "Retained",
+        "5.7262, 8.9458",
+        "5.7032, 8.9228, 5.7492, 8.9688",
+        "211208",
+        "161836/2844/41195/5333"
+      ],
+      [
+        "Nigeria_600295",
+        "0.5100",
+        "0.0999",
+        "Retained",
+        "5.8182, 8.9918",
+        "5.7952, 8.9688, 5.8412, 9.0148",
+        "181691",
+        "95910/2120/7324/76337"
+      ],
+      [
+        "Nigeria_707067",
+        "0.4191",
+        "0.4801",
+        "Retained",
+        "5.7262, 10.0036",
+        "5.7032, 9.9806, 5.7492, 10.0266",
+        "261359",
+        "257496/107/3548/208"
+      ],
+      [
+        "Nigeria_78061",
+        "0.3301",
+        "0.2080",
+        "Retained",
+        "5.9562, 8.6238",
+        "5.9332, 8.6008, 5.9792, 8.6468",
+        "228886",
+        "220404/2988/412/5082"
+      ],
+      [
+        "Nigeria_812045",
+        "0.5765",
+        "0.1347",
+        "Retained",
+        "5.8182, 9.0838",
+        "5.7952, 9.0608, 5.8412, 9.1068",
+        "236584",
+        "113882/3119/13945/105638"
+      ],
+      [
+        "Nigeria_81933",
+        "0.6281",
+        "0.5607",
+        "Retained",
+        "5.6342, 8.8538",
+        "5.6112, 8.8308, 5.6572, 8.8768",
+        "246268",
+        "67566/752/94919/83031"
+      ],
+      [
+        "Nigeria_820924",
+        "0.4194",
+        "0.3818",
+        "Retained",
+        "5.6802, 9.4977",
+        "5.6572, 9.4747, 5.7032, 9.5207",
+        "262143",
+        "260905/62/879/297"
+      ],
+      [
+        "Nigeria_952958",
+        "0.2763",
+        "0.1447",
+        "Retained",
+        "6.0022, 8.6238",
+        "5.9792, 8.6008, 6.0252, 8.6468",
+        "227674",
+        "216321/1618/1506/8229"
+      ],
+      [
+        "Nigeria_984831",
+        "0.6596",
+        "0.5818",
+        "Reviewed",
+        "5.7722, 8.8538",
+        "5.7492, 8.8308, 5.7952, 8.8768",
+        "240158",
+        "18217/261/77973/143707"
+      ]
+    ],
+    "widths_inches": [
+      1.436046511627907,
+      0.6627906976744187,
+      0.6627906976744187,
+      0.8837209302325583,
+      1.3255813953488373,
+      1.7674418604651165,
+      0.8837209302325583,
+      1.877906976744186
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 3.0,
+    "notes": [],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 12,
+    "caption": "Supplementary Table S12. Risk differences near the 80% operating target.",
+    "cells": [
+      [
+        "Block",
+        "Endpoint",
+        "Mean Δ at .80",
+        "Run range at .80",
+        "Δ<0",
+        "Mean Δ .70–.90",
+        "Mean Δ .80–1.00"
+      ],
+      [
+        "P1",
+        "Pooled mIoU",
+        "−0.0231",
+        "-0.0417 to -0.0008",
+        "9/9",
+        "−0.0236",
+        "−0.0109"
+      ],
+      [
+        "P1",
+        "Foreground Dice",
+        "−0.0188",
+        "-0.0505 to -0.0006",
+        "9/9",
+        "−0.0189",
+        "−0.0091"
+      ],
+      [
+        "P2",
+        "Pooled mIoU",
+        "−0.0191",
+        "-0.0502 to +0.0012",
+        "8/9",
+        "−0.0212",
+        "−0.0086"
+      ],
+      [
+        "P2",
+        "Foreground Dice",
+        "−0.0146",
+        "-0.0392 to +0.0025",
+        "6/9",
+        "−0.0169",
+        "−0.0073"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      1.7000000000000002,
+      1.3,
+      1.8,
+      0.7,
+      1.7,
+      1.7
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "All differences are v2 minus the stored comparator. Interval columns are width-normalized partial AURC, equivalent to mean risk difference on the interval; negative values favor v2 for that endpoint. Directional counts are descriptive. Raw partial integrals, every event-run value, and seed-averaged event distributions are retained in operating_point_effects_by_run_event.csv, operating_point_seed_averaged_events.csv and operating_point_summary.csv."
+    ],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 13,
+    "caption": "Supplementary Table S13. Every paired external seed effect and descriptive range.",
+    "cells": [
+      [
+        "Block",
+        "Seed 13",
+        "Seed 37",
+        "Seed 71",
+        "Median",
+        "Range"
+      ],
+      [
+        "E1",
+        "+0.00198",
+        "+0.00027",
+        "+0.00300",
+        "+0.00198",
+        "+0.00027 to +0.00300"
+      ],
+      [
+        "E2",
+        "−0.03021",
+        "−0.02374",
+        "−0.01242",
+        "−0.02374",
+        "-0.03021 to -0.01242"
+      ],
+      [
+        "E3",
+        "−0.10805",
+        "−0.04576",
+        "−0.02224",
+        "−0.04576",
+        "-0.10805 to -0.02224"
+      ]
+    ],
+    "widths_inches": [
+      0.6867469879518072,
+      1.4879518072289155,
+      1.4879518072289155,
+      1.4879518072289155,
+      1.4879518072289155,
+      2.8614457831325297
+    ],
+    "font_size": 10,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "Values are paired AURC differences under the original endpoint. External runs refit coefficients and thresholds on labeled target calibration data. The three seeds reuse each dataset and are not independent geographic samples. E1 uses the custom multiclass comparator; E2 and E3 use binary self-overlap."
+    ],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 14,
+    "caption": "Supplementary Table S14. Calibration-threshold workload by block.",
+    "cells": [
+      [
+        "Block",
+        "Mean event-macro coverage",
+        "Mean pooled coverage",
+        "Pooled range",
+        "Mean absolute pooled error",
+        "Max pooled review ratio"
+      ],
+      [
+        "E1",
+        "0.7773",
+        "0.7882",
+        "0.7180 to 0.8585",
+        "0.0508",
+        "1.41"
+      ],
+      [
+        "E2",
+        "0.8083",
+        "0.8083",
+        "0.7833 to 0.8250",
+        "0.0194",
+        "1.08"
+      ],
+      [
+        "E3",
+        "0.7389",
+        "0.7389",
+        "0.6917 to 0.7750",
+        "0.0611",
+        "1.54"
+      ],
+      [
+        "P1",
+        "0.7832",
+        "0.7916",
+        "0.5050 to 0.9241",
+        "0.0937",
+        "2.48"
+      ],
+      [
+        "P2",
+        "0.8141",
+        "0.8135",
+        "0.6989 to 0.9310",
+        "0.0926",
+        "1.51"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      1.6,
+      1.6,
+      2.0,
+      1.8,
+      1.9000000000000001
+    ],
+    "font_size": 10,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "Review ratio is (1 − pooled tile-count retention)/(1 − 0.80), assuming every referred tile needs review. The maximum, 2.475, occurred in P1/F3/seed 71: 102 of 202 tiles retained, 100 reviewed. Event-macro coverage was 0.5392, whereas pooled tile-count coverage was 0.5050. Every event-macro value was reproduced from original score files and saved thresholds to numerical tolerance 1e-12. Complete run and event counts are in threshold_denominator_audit.csv and threshold_event_counts.csv. A ratio below one indicates less review than planned and is not evidence that accepted predictions are safe. No analyst time or post-review accuracy was measured."
+    ],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 15,
+    "caption": "Supplementary Table S15. Fidelity and retained-set changes under exact binary SDC.",
+    "cells": [
+      [
+        "Block",
+        "Empty predictions cal / test",
+        "Zero denominators",
+        "Test event orders changed",
+        "Retained sets changed at .80"
+      ],
+      [
+        "P1",
+        "54 / 61",
+        "0",
+        "5 / 33",
+        "3 / 33"
+      ],
+      [
+        "P2",
+        "167 / 134",
+        "0",
+        "13 / 33",
+        "3 / 33"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      2.2,
+      1.6,
+      2.5,
+      2.6
+    ],
+    "font_size": 10,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "There are 1,320 records per split per block and 33 correlated test event-runs per block. Exact SDC assigns risk one to prediction-empty tiles; all-zero probability fields were not observed. Legacy scores and entropy are reproduced exactly from the frozen checkpoints, and the original v2 weights and scores are reproduced exactly from calibration features. Per-event ordering changes and symmetric differences of retained sets are supplied in ordering_changes.csv. Replacing the stored binary comparator with exact SDC changes pooled-mIoU AURC by at most 0.000028 in P1 and 0.000336 in P2 across individual runs."
+    ],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 16,
+    "caption": "Supplementary Table S16. Target-matched comparison with exact binary SDC.",
+    "cells": [
+      [
+        "Block",
+        "Fitting target",
+        "Tile-mean ΔAURC",
+        "Pooled ΔAURC",
+        "Tile Δ<0",
+        "Pooled Δ<0"
+      ],
+      [
+        "P1",
+        "Frozen v2 (mIoU)",
+        "−0.0062",
+        "−0.0343",
+        "6/9",
+        "9/9"
+      ],
+      [
+        "P1",
+        "mIoU refit",
+        "−0.0047",
+        "−0.0341",
+        "6/9",
+        "9/9"
+      ],
+      [
+        "P1",
+        "Foreground Dice refit",
+        "−0.0049",
+        "−0.0076",
+        "6/9",
+        "8/9"
+      ],
+      [
+        "P1",
+        "Foreground IoU refit",
+        "−0.0052",
+        "−0.0126",
+        "7/9",
+        "9/9"
+      ],
+      [
+        "P2",
+        "Frozen v2 (mIoU)",
+        "−0.0093",
+        "−0.0401",
+        "6/9",
+        "9/9"
+      ],
+      [
+        "P2",
+        "mIoU refit",
+        "−0.0050",
+        "−0.0390",
+        "6/9",
+        "9/9"
+      ],
+      [
+        "P2",
+        "Foreground Dice refit",
+        "+0.0015",
+        "−0.0064",
+        "5/9",
+        "8/9"
+      ],
+      [
+        "P2",
+        "Foreground IoU refit",
+        "+0.0042",
+        "−0.0102",
+        "4/9",
+        "8/9"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      2.6500000000000004,
+      1.8,
+      1.8,
+      1.3,
+      1.35
+    ],
+    "font_size": 10,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "Differences are the named score minus exact SDC. Each row evaluates the corresponding loss functional; both evaluation columns use the same score vector and retained sets. Within an event, the tile endpoint averages tile losses, whereas the pooled endpoint first sums retained confusion matrices. Events are then averaged equally within a run and the nine correlated runs equally within a block. Negative values favor the fitted score under that endpoint. Directional counts are descriptive. All three fitted targets are evaluated under all six endpoints in paired_summary.csv, with every run in paired_effects_by_run.csv; this table displays each target-matched pair. The original v2 row retains its original overlap feature and calibration fit. All three revision refits use exact SDC as the overlap feature."
+    ],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 17,
+    "caption": "Supplementary Table S17. Target-matched risk and reference-hazard coverage at nominal 0.80.",
+    "cells": [
+      [
+        "Block",
+        "Fitting target",
+        "Tile-mean Δrisk",
+        "Pooled Δrisk",
+        "Δhazard coverage"
+      ],
+      [
+        "P1",
+        "Frozen v2 (mIoU)",
+        "−0.0104",
+        "−0.0231",
+        "−0.2145"
+      ],
+      [
+        "P1",
+        "mIoU refit",
+        "−0.0105",
+        "−0.0231",
+        "−0.2145"
+      ],
+      [
+        "P1",
+        "Foreground Dice refit",
+        "−0.0033",
+        "−0.0036",
+        "−0.0126"
+      ],
+      [
+        "P1",
+        "Foreground IoU refit",
+        "−0.0040",
+        "−0.0049",
+        "−0.0136"
+      ],
+      [
+        "P2",
+        "Frozen v2 (mIoU)",
+        "−0.0032",
+        "−0.0192",
+        "−0.1573"
+      ],
+      [
+        "P2",
+        "mIoU refit",
+        "−0.0031",
+        "−0.0210",
+        "−0.1652"
+      ],
+      [
+        "P2",
+        "Foreground Dice refit",
+        "+0.0011",
+        "−0.0042",
+        "−0.0137"
+      ],
+      [
+        "P2",
+        "Foreground IoU refit",
+        "+0.0014",
+        "−0.0060",
+        "−0.0140"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      2.6500000000000004,
+      2.0,
+      2.0,
+      2.25
+    ],
+    "font_size": 10,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "All differences are relative to exact SDC and averaged over the same nine correlated runs as Table S16. Hazard coverage is retained reference-foreground pixels divided by full-event reference-foreground pixels. A negative hazard-coverage difference means more reference hazard was deferred to review. This label-informed diagnostic does not select tiles. Nominal coverage uses the original floating-point grid and retains the ceiling count within each event, capped at the event size. It is distinct from applying a calibration threshold. These equal-run summaries differ in weighting from the equal-event-run summary in main Table 4. Full ranges, area coverage and 0.70–0.90 partial integrals accompany the source data."
+    ],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 18,
+    "caption": "Supplementary Table S18. Temperature sensitivity of probability-dependent risk components.",
+    "cells": [
+      [
+        "Block",
+        "Component",
+        "Median ρ",
+        "Minimum ρ",
+        "Mean ΔAURC",
+        "Max |ΔAURC|"
+      ],
+      [
+        "P1",
+        "Upper-tail entropy",
+        "0.9996",
+        "0.9992",
+        "+0.00295",
+        "0.01409"
+      ],
+      [
+        "P1",
+        "Upper-tail MSP risk",
+        "0.9996",
+        "0.9988",
+        "+0.00235",
+        "0.00797"
+      ],
+      [
+        "P1",
+        "Spatial inconsistency",
+        "0.9975",
+        "0.9888",
+        "+0.00624",
+        "0.02866"
+      ],
+      [
+        "P1",
+        "Stored binary overlap",
+        "0.9895",
+        "0.9584",
+        "−0.00658",
+        "0.02070"
+      ],
+      [
+        "P1",
+        "Exact binary SDC",
+        "0.9895",
+        "0.9583",
+        "−0.00658",
+        "0.02069"
+      ],
+      [
+        "P2",
+        "Upper-tail entropy",
+        "0.9998",
+        "0.9993",
+        "+0.00073",
+        "0.00514"
+      ],
+      [
+        "P2",
+        "Upper-tail MSP risk",
+        "0.9998",
+        "0.9992",
+        "+0.00020",
+        "0.00210"
+      ],
+      [
+        "P2",
+        "Spatial inconsistency",
+        "0.9980",
+        "0.9894",
+        "−0.00001",
+        "0.00408"
+      ],
+      [
+        "P2",
+        "Stored binary overlap",
+        "0.9950",
+        "0.9919",
+        "−0.00422",
+        "0.00954"
+      ],
+      [
+        "P2",
+        "Exact binary SDC",
+        "0.9950",
+        "0.9919",
+        "−0.00419",
+        "0.00954"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      2.9000000000000004,
+      1.3,
+      1.3,
+      1.7,
+      1.7
+    ],
+    "font_size": 10,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "Each difference is T = 1 minus calibrated T for event-pooled mIoU AURC; a negative value favors T = 1 for this endpoint. The correlation columns summarize nine correlated test runs per block, and the last column gives the largest absolute run difference. For upper-tail entropy, T = 1 lowers the raw mean score by 0.1125 and 0.0909 in P1/P2, while the nominal 0.80 retained set changes in only one of 33 event-runs per block. This distinguishes probability-score magnitude from selective rank sensitivity. All six endpoints, every run, score differences and retained-set changes are in the accompanying source tables."
+    ],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 19,
+    "caption": "Supplementary Table S19. Composite temperature ablation and realized routing coverage.",
+    "cells": [
+      [
+        "Block",
+        "T = 1 condition",
+        "Tile ΔAURC",
+        "Pooled ΔAURC",
+        "Δrisk at .80",
+        "Δretention (pp)"
+      ],
+      [
+        "P1",
+        "Frozen mapping and weights",
+        "+0.00798",
+        "+0.00265",
+        "−0.00255",
+        "+11.34"
+      ],
+      [
+        "P1",
+        "New ECDF, fixed weights",
+        "−0.00101",
+        "−0.00396",
+        "−0.00437",
+        "−0.58"
+      ],
+      [
+        "P1",
+        "New ECDF and refitted weights",
+        "−0.00017",
+        "−0.00183",
+        "−0.00169",
+        "−0.87"
+      ],
+      [
+        "P2",
+        "Frozen mapping and weights",
+        "+0.01048",
+        "+0.00347",
+        "+0.00306",
+        "+10.26"
+      ],
+      [
+        "P2",
+        "New ECDF, fixed weights",
+        "+0.00017",
+        "−0.00133",
+        "−0.00275",
+        "+1.17"
+      ],
+      [
+        "P2",
+        "New ECDF and refitted weights",
+        "+0.00030",
+        "−0.00045",
+        "−0.00062",
+        "+0.80"
+      ]
+    ],
+    "widths_inches": [
+      0.6,
+      2.6500000000000004,
+      1.55,
+      1.55,
+      1.45,
+      1.7
+    ],
+    "font_size": 10,
+    "vertical_padding_points": 4.5,
+    "notes": [
+      "All differences are the named T = 1 pipeline minus original calibrated v2, averaged equally over nine correlated runs per block. Both AURC columns and nominal 0.80 risk use the mIoU functional. Nominal 0.80 risk is calculated from within-event fixed-count selection, while the last column applies each condition’s calibration threshold to the test split and counts retained tiles across the entire split; it is measured in percentage points. All thresholds retain ties and use the original event-balanced 80th-percentile rule. Updating the calibration mapping and coefficients reduces the average retention displacement in these runs; it does not guarantee attainment of nominal 0.80 coverage under shift. The full-refit pooled-AURC run differences range from −0.00673 to +0.00247 in P1 and −0.00499 to +0.00673 in P2. Complete routing counts, event-macro versus pooled denominators, area and reference-hazard coverage, and partial AURCs accompany the table."
+    ],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 20,
+    "caption": "Supplementary Table S20. Class-set AURC displacement for every Kuro Siwo seed and ordering.",
+    "cells": [
+      [
+        "Seed",
+        "Ordering",
+        "Present-class\nAURC",
+        "Fixed-class\nAURC",
+        "ΔAURC",
+        "Relative shift\n(%)",
+        "Δrisk at\n0.80"
+      ],
+      [
+        "13",
+        "GeoRisk v2",
+        "0.3378",
+        "0.4445",
+        "+0.1067",
+        "31.6",
+        "0.0175"
+      ],
+      [
+        "13",
+        "Custom multiclass self-overlap",
+        "0.3358",
+        "0.4425",
+        "+0.1067",
+        "31.8",
+        "0.0175"
+      ],
+      [
+        "37",
+        "GeoRisk v2",
+        "0.2616",
+        "0.3403",
+        "+0.0787",
+        "30.1",
+        "0.0000"
+      ],
+      [
+        "37",
+        "Custom multiclass self-overlap",
+        "0.2613",
+        "0.3401",
+        "+0.0788",
+        "30.1",
+        "0.0000"
+      ],
+      [
+        "71",
+        "GeoRisk v2",
+        "0.2918",
+        "0.3956",
+        "+0.1037",
+        "35.6",
+        "0.0186"
+      ],
+      [
+        "71",
+        "Custom multiclass self-overlap",
+        "0.2888",
+        "0.3951",
+        "+0.1062",
+        "36.8",
+        "0.0186"
+      ]
+    ],
+    "widths_inches": [
+      0.55,
+      2.65,
+      1.25,
+      1.25,
+      1.1,
+      1.4,
+      1.3
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 6,
+    "notes": [
+      "Δ is fixed-class minus present-class risk. Relative shift is 100 × ΔAURC / present-class AURC for that row; the overall 32.7% value is the ratio of the mean displacement to mean present-class AURC, not the mean of the six percentages. All rows reuse the same test tiles/events. The six rows are paired descriptive results, not six independent geographic replications or a confidence interval."
+    ],
+    "aliases": []
+  },
+  {
+    "document": "Supplementary",
+    "number": 21,
+    "caption": "Supplementary Table S21. Fixed review count versus calibration-threshold routing on unchanged v2 scores.",
+    "cells": [
+      [
+        "Block\n(runs)",
+        "Threshold review\n% mean [range]",
+        "Fixed review\n% mean [range]",
+        "Mean Δ\ntile risk",
+        "Mean Δ\nbatch risk",
+        "Mean Δ hazard\ncoverage (pp)"
+      ],
+      [
+        "P1 (9)",
+        "20.84 [7.59, 49.50]",
+        "19.72 [19.35, 20.00]",
+        "+0.0048",
+        "-0.0037",
+        "-3.24"
+      ],
+      [
+        "P2 (9)",
+        "18.65 [6.90, 30.11]",
+        "19.72 [19.35, 20.00]",
+        "-0.0001",
+        "+0.0001",
+        "+0.07"
+      ],
+      [
+        "E1 (3)",
+        "21.18 [14.15, 28.20]",
+        "20.00 [20.00, 20.00]",
+        "+0.0031",
+        "+0.0011",
+        "+0.21"
+      ],
+      [
+        "E2 (3)",
+        "19.17 [17.50, 21.67]",
+        "20.00 [20.00, 20.00]",
+        "-0.0040",
+        "—",
+        "—"
+      ],
+      [
+        "E3 (3)",
+        "26.11 [22.50, 30.83]",
+        "20.00 [20.00, 20.00]",
+        "+0.0127",
+        "—",
+        "—"
+      ]
+    ],
+    "widths_inches": [
+      0.8,
+      2.2,
+      2.2,
+      1.25,
+      1.35,
+      1.7
+    ],
+    "font_size": 9.5,
+    "vertical_padding_points": 6,
+    "notes": [
+      "Δ is fixed count minus threshold on the same run. Risk is 1−mIoU; a negative risk change means lower retained-set error. Batch risk uses the full-batch fixed class set. Hazard is reference water in P1/P2 and flood in E1; pp denotes percentage points. E2/E3 have no frozen per-tile confusion counts in the audit package, so pooled risk and content are not estimated for those blocks. Means and ranges summarize correlated runs, not independent replications or confidence intervals. All 27 paired values are supplied in paired_by_run.csv."
+    ],
+    "aliases": []
+  }
+]
