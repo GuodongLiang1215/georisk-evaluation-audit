@@ -1,0 +1,256 @@
+{
+  "scope": "Observed external material; checkpoint hashes not computed, sizes are inventory only. No public weight links established.",
+  "dofa_commit_id": null,
+  "dofa_source_fingerprints": [
+    {
+      "path": "third_party/DOFA/checkpoints/download_weights.py",
+      "bytes": 250,
+      "sha256": "7a069e93ab689f88d8a0f1b24eee24f84b9ba0b7176961ea41101b21a5224fc9"
+    },
+    {
+      "path": "third_party/DOFA/dofa_v1.py",
+      "bytes": 3984,
+      "sha256": "f9aad1cd07ab03e7ba838e132a7c5a14ef82c62926f955dbdc738918ba62883e"
+    },
+    {
+      "path": "third_party/DOFA/downstream_tasks/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/DOFA/downstream_tasks/geobench_classification/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/DOFA/downstream_tasks/geobench_classification/engine.py",
+      "bytes": 4796,
+      "sha256": "d7d260c877eca9a0dadddbd667422b2395ca38e7f75d60f33b44f6046992edff"
+    },
+    {
+      "path": "third_party/DOFA/downstream_tasks/geobench_classification/main_linear_probe.py",
+      "bytes": 18479,
+      "sha256": "6cdf75dc6c381d337166617bf508366c62cbd330f8d696e1112a4333031e7162"
+    },
+    {
+      "path": "third_party/DOFA/downstream_tasks/geobench_segmentation/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/DOFA/downstream_tasks/geobench_segmentation/engine.py",
+      "bytes": 5034,
+      "sha256": "669475dda9e1ec3a70383a89476e3af5b94257446d89654e248d082ed2bc453b"
+    },
+    {
+      "path": "third_party/DOFA/downstream_tasks/geobench_segmentation/main_finetune.py",
+      "bytes": 19849,
+      "sha256": "538b9bfd2b9d03a81ff5c2501fbca36938372ca05c6fba286190638b817317fe"
+    },
+    {
+      "path": "third_party/DOFA/downstream_tasks/geobench_segmentation/model.py",
+      "bytes": 3130,
+      "sha256": "605b5b38109af1d088e3a9ba886759ea7772cd70760656649df24043adff2786"
+    },
+    {
+      "path": "third_party/DOFA/hubconf.py",
+      "bytes": 733,
+      "sha256": "879fd469332e544a7dbe34140b85b40282056b6343bfa6514051b88779357561"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/datasets/__init__.py",
+      "bytes": 2,
+      "sha256": "32c4858e22cc2c967b42150fa550562a2c839c2cebcaab91cabdf6f4da020022"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/datasets/ofall_dataset.py",
+      "bytes": 18846,
+      "sha256": "5dd38945b134ebc19b3988f66b36ea01bec36db2192dc1e290a20ca9d520d4c9"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/engine_pretrain.py",
+      "bytes": 3602,
+      "sha256": "e1aaa90348898e75006f713304aa7f8bef9f1046fdb5de3b4a4f45fb7f8856ec"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/main_pretrain_ofa.py",
+      "bytes": 10110,
+      "sha256": "ebd7d38f850e528fe4cafe3c673960a541669bd468a914b805b37e567bc7cbfb"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/models_base_ofa_mae.py",
+      "bytes": 14103,
+      "sha256": "bc6af5d780514e5fd03f2efa2142d5a1df1c8ac733b1d9fefced690fe7725f51"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/samplers/distributed.py",
+      "bytes": 3510,
+      "sha256": "ec8e26c2e485cc7748b942b4b46da8e79178dd6d734b0930398730f5de131449"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/util/crop.py",
+      "bytes": 1361,
+      "sha256": "117a2d8f1538494ac19375e51ec175bba4f2c113e21a0cf19e42ff597a5f73a0"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/util/datasets.py",
+      "bytes": 1902,
+      "sha256": "67e4082f439e4f30c42ce3153ee25bf99926d6e1ab3596d686268ed103a95178"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/util/lars.py",
+      "bytes": 1851,
+      "sha256": "1bb75085eecf93b8d7ed7972c507495586e71a8f483bcdcd4f37c354f88a0fc0"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/util/lr_decay.py",
+      "bytes": 2461,
+      "sha256": "c21f7ac4070e7dc3ef9fe3a904b9ab59b80082d136b70d99cf7853c5ceb62dba"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/util/lr_sched.py",
+      "bytes": 802,
+      "sha256": "4ab5d5633bda0be9173ec91570bb3050326d942582ded2267702b53c3ac87c2c"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/util/misc.py",
+      "bytes": 12536,
+      "sha256": "2caf3eecf4f473e34eac4b45c818e3bcb2f90582609abdc7b33fb87eb56edc23"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/util/pos_embed.py",
+      "bytes": 6866,
+      "sha256": "2ff14831c533ac04fa0d61b790aa88ceee5843a7ca147a87131caf8980e1f100"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/util/vision_transformer.py",
+      "bytes": 28513,
+      "sha256": "f2ad1906ec1db72d22cd34bce48f8cf47b421e74ab7b4042b54b7b6d3b6402d0"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/util/wandb_log.py",
+      "bytes": 2940,
+      "sha256": "d8c884b50d2c279e19e5c8769aa838675f350e08a8901e9dc1bd6541cd3f9f83"
+    },
+    {
+      "path": "third_party/DOFA/pretraining/wave_dynamic_layer.py",
+      "bytes": 8757,
+      "sha256": "7fd19a955deba5265f7824e6a0cb805191c7b322525deea8252a7509f8786cd8"
+    },
+    {
+      "path": "third_party/DOFA/wave_dynamic_layer.py",
+      "bytes": 7415,
+      "sha256": "f3ab4b3af85b73765bc4a48e39b12d2ed6c81d2c06936b3e9ca16b1b10e25a28"
+    }
+  ],
+  "primary_checkpoints": [
+    {
+      "path": "runs/P1/f1/seed_13/checkpoints/best.pt",
+      "bytes": 124167633,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P1/f1/seed_37/checkpoints/best.pt",
+      "bytes": 124167633,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P1/f1/seed_71/checkpoints/best.pt",
+      "bytes": 124167633,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P1/f2/seed_13/checkpoints/best.pt",
+      "bytes": 124167633,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P1/f2/seed_37/checkpoints/best.pt",
+      "bytes": 124167633,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P1/f2/seed_71/checkpoints/best.pt",
+      "bytes": 124167633,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P1/f3/seed_13/checkpoints/best.pt",
+      "bytes": 124167633,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P1/f3/seed_37/checkpoints/best.pt",
+      "bytes": 124167633,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P1/f3/seed_71/checkpoints/best.pt",
+      "bytes": 124167633,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P2/f1/seed_13/checkpoints/best.pt",
+      "bytes": 489388557,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P2/f1/seed_37/checkpoints/best.pt",
+      "bytes": 489388557,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P2/f1/seed_71/checkpoints/best.pt",
+      "bytes": 489388557,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P2/f2/seed_13/checkpoints/best.pt",
+      "bytes": 489388557,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P2/f2/seed_37/checkpoints/best.pt",
+      "bytes": 489388557,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P2/f2/seed_71/checkpoints/best.pt",
+      "bytes": 489388557,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P2/f3/seed_13/checkpoints/best.pt",
+      "bytes": 489388557,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P2/f3/seed_37/checkpoints/best.pt",
+      "bytes": 489388557,
+      "sha256": null,
+      "included": false
+    },
+    {
+      "path": "runs/P2/f3/seed_71/checkpoints/best.pt",
+      "bytes": 489388557,
+      "sha256": null,
+      "included": false
+    }
+  ]
+}

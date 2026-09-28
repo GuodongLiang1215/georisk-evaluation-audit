@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "dataset": "Sen1Floods11-v1.1-hand-labeled-S1",
+  "channels": [
+    "VV",
+    "VH"
+  ],
+  "statistics_population": "fold-specific training events and valid labeled pixels only",
+  "normalization": "clip to training p02/p98, rescale to [0,1], then standardize",
+  "histogram_bins": 65536,
+  "folds": {
+    "F1": {
+      "train_events": [
+        "IND",
+        "LKA",
+        "PRY",
+        "SOM"
+      ],
+      "train_samples": 202,
+      "valid_pixel_count": [
+        46916198,
+        46916198
+      ],
+      "observed_min": [
+        -87.50163269042969,
+        -87.50163269042969
+      ],
+      "observed_max": [
+        24.666152954101562,
+        17.376384735107422
+      ],
+      "clip_min_p02": [
+        -21.852254188679822,
+        -29.367736596775547
+      ],
+      "clip_max_p98": [
+        -3.2356321126254417,
+        -9.969189183526488
+      ],
+      "normalized_mean": [
+        0.6359041284841942,
+        0.640434368725626
+      ],
+      "normalized_std": [
+        0.1997562589666652,
+        0.2184875583705825
+      ]
+    },
+    "F2": {
+      "train_events": [
+        "BOL",
+        "ESP",
+        "KHM",
+        "NGA"
+      ],
+      "train_samples": 93,
+      "valid_pixel_count": [
+        21702674,
+        21702674
+      ],
+      "observed_min": [
+        -68.71710968017578,
+        -78.21723937988281
+      ],
+      "observed_max": [
+        36.83202362060547,
+        16.763376235961914
+      ],
+      "clip_min_p02": [
+        -25.07272695605389,
+        -36.04762155744523
+      ],
+      "clip_max_p98": [
+        -3.767258970372249,
+        -10.594536852687945
+      ],
+      "normalized_mean": [
+        0.6534679054578049,
+        0.7065098285075426
+      ],
+      "normalized_std": [
+        0.23183627249413735,
+        0.2267199810442402
+      ]
+    },
+    "F3": {
+      "train_events": [
+        "GHA",
+        "PAK",
+        "USA"
+      ],
+      "train_samples": 145,
+      "valid_pixel_count": [
+        32202932,
+        32202932
+      ],
+      "observed_min": [
+        -49.9672966003418,
+        -60.048831939697266
+      ],
+      "observed_max": [
+        24.190916061401367,
+        14.478318214416504
+      ],
+      "clip_min_p02": [
+        -19.93624073566888,
+        -28.729509833613733
+      ],
+      "clip_max_p98": [
+        -4.788919416934236,
+        -11.552311349783155
+      ],
+      "normalized_mean": [
+        0.6104852538846304,
+        0.665363663672759
+      ],
+      "normalized_std": [
+        0.21687761312252027,
+        0.210853223779197
+      ]
+    }
+  }
+}

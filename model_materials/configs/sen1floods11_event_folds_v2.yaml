@@ -1,0 +1,49 @@
+version: 2
+dataset: Sen1Floods11-v1.1
+primary_population: hand_labeled_flood_events
+primary_event_count: 11
+primary_sample_count: 440
+source_hand_labeled_sample_count: 446
+excluded_samples:
+  Paraguay_34417: VV and VH contain no finite pixels
+  Ghana_234935: label contains no valid pixels
+  Ghana_26376: label contains no valid pixels
+  Ghana_277: label contains no valid pixels
+  Ghana_5079: label contains no valid pixels
+  Ghana_83483: label contains no valid pixels
+event_aliases:
+  BOL: Bolivia
+  GHA: Ghana
+  IND: India
+  KHM: Mekong
+  NGA: Nigeria
+  PAK: Pakistan
+  PRY: Paraguay
+  SOM: Somalia
+  ESP: Spain
+  LKA: Sri-Lanka
+  USA: USA
+weak_only_events:
+  COL: Colombia
+folds:
+  F1:
+    train: [IND, PRY, SOM, LKA]
+    calibration: [GHA, PAK, USA]
+    test: [KHM, NGA, BOL, ESP]
+  F2:
+    train: [KHM, NGA, BOL, ESP]
+    calibration: [IND, PRY, SOM, LKA]
+    test: [GHA, PAK, USA]
+  F3:
+    train: [GHA, PAK, USA]
+    calibration: [KHM, NGA, BOL, ESP]
+    test: [IND, PRY, SOM, LKA]
+evaluation:
+  aggregation: event_macro
+  primary_metrics:
+    - AURC
+    - selective_risk_at_80pct_target_coverage
+    - realized_coverage
+weak_label_policy:
+  primary_experiments: excluded
+  optional_extension: training_only

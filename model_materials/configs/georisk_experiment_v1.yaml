@@ -1,0 +1,180 @@
+version: 1
+status: frozen_for_implementation
+date: 2026-08-24
+
+research:
+  primary_question: >-
+    Can a label-free tile risk score combining predictive uncertainty,
+    representation shift, and spatial inconsistency improve selective
+    geospatial segmentation under unseen-event shift?
+  primary_endpoint: event_macro_aurc
+  target_coverage: 0.80
+
+environment:
+  python: "3.11"
+  gpu: "NVIDIA GeForce RTX 5070"
+  gpu_memory_mib: 12227
+  mixed_precision: true
+
+data:
+  contract: configs/georisk_data_v1.yaml
+  sen1floods11:
+    folds: configs/sen1floods11_event_folds_v2.yaml
+    normalization: configs/sen1floods11_fold_normalization_v1.json
+    events: true
+  kuro_siwo:
+    split: official
+    event_key: actid
+    primary_model_scope: [unet]
+  burn_scars:
+    split: official
+    event_key: null
+    reporting_scope: dataset_level
+
+training:
+  seeds: [13, 37, 71]
+  crop_size: [224, 224]
+  evaluation_size: native
+  internal_validation_fraction_per_train_event: 0.10
+  internal_validation_without_event_ids: sample_random
+  checkpoint_metric: event_macro_miou
+  augmentation:
+    horizontal_flip: true
+    vertical_flip: true
+    rotation_degrees: [0, 90, 180, 270]
+  loss:
+    cross_entropy_weight: 0.5
+    soft_dice_weight: 0.5
+    ignore_index: 255
+
+models:
+  unet:
+    encoder: supervised_from_scratch
+    stages: 4
+    initial_channels: 64
+    normalization: group_norm
+    optimizer: adamw
+    learning_rate: 0.0003
+    weight_decay: 0.0001
+    scheduler: cosine
+    epochs: 100
+    batch_size: 8
+    gradient_accumulation_steps: 1
+    risk_embedding: bottleneck_global_average
+  dofa_upernet:
+    encoder: dofa_vit_base_patch16
+    weights: DOFA_ViT_base_e100.pth
+    pretrained: true
+    freeze_encoder: true
+    band_descriptors:
+      sen1floods11: [5.405, 5.405]
+      burn_scars: [0.49, 0.56, 0.665, 0.865, 1.61, 2.19]
+    decoder: upernet
+    optimizer: adamw
+    learning_rate: 0.0001
+    weight_decay: 0.0001
+    scheduler: cosine
+    epochs: 20
+    batch_size: 4
+    gradient_accumulation_steps: 2
+    risk_embedding: last_encoder_feature_global_average
+
+probability_calibration:
+  method: scalar_temperature
+  objective: negative_log_likelihood
+  event_balanced: true
+  burn_scars_event_balanced: false
+
+risk:
+  unit: tile
+  direction: higher_is_riskier
+  uncertainty:
+    pixel_measure: normalized_predictive_entropy
+    aggregation: upper_tail_mean
+    upper_tail_fraction: 0.10
+  representation_shift:
+    embedding_normalization: l2
+    distance: cosine
+    reference_split: train
+    nearest_neighbors: 5
+    aggregation: median
+  spatial_inconsistency:
+    neighborhood: [3, 3]
+    pixel_measure: normalized_jensen_shannon_divergence
+    aggregation: upper_tail_mean
+    upper_tail_fraction: 0.10
+  component_scaling:
+    method: empirical_cdf
+    event_balanced: true
+    fit_split: calibration
+    burn_scars_event_balanced: false
+  combination:
+    uncertainty: 0.3333333333
+    representation_shift: 0.3333333333
+    spatial_inconsistency: 0.3333333333
+
+selective_prediction:
+  threshold_fit_split: calibration
+  threshold_quantile: 0.80
+  event_balanced: true
+  burn_scars_event_balanced: false
+  coverage_grid:
+    start: 0.10
+    stop: 1.00
+    step: 0.05
+
+scores:
+  - top_tail_msp
+  - top_tail_entropy
+  - soft_dice_risk_binary
+  - representation_shift
+  - spatial_inconsistency
+  - uncertainty_plus_shift
+  - uncertainty_plus_spatial
+  - shift_plus_spatial
+  - georisk_full
+  - oracle_tile_loss
+
+blocks:
+  P1:
+    dataset: sen1floods11
+    model: unet
+    partitions: [F1, F2, F3]
+  P2:
+    dataset: sen1floods11
+    model: dofa_upernet
+    partitions: [F1, F2, F3]
+  E1:
+    dataset: kuro_siwo
+    model: unet
+    partitions: [official]
+  E2:
+    dataset: burn_scars
+    model: unet
+    partitions: [official]
+  E3:
+    dataset: burn_scars
+    model: dofa_upernet
+    partitions: [official]
+
+reporting:
+  primary_metrics:
+    - event_macro_aurc
+    - selective_risk_at_calibrated_80pct_threshold
+    - realized_coverage_at_calibrated_80pct_threshold
+  secondary_metrics:
+    - worst_event_selective_risk
+    - full_coverage_miou
+    - macro_f1
+    - score_loss_spearman
+  primary_interval:
+    method: paired_event_bootstrap
+    confidence: 0.95
+  seed_reporting: both_individual_and_mean
+
+outputs:
+  runs: runs
+  results: results
+  aggregate_metrics: results/georisk_metrics.csv
+  risk_coverage: results/risk_coverage.csv
+  figures: results/figures

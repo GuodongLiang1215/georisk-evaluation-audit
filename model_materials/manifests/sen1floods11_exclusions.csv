@@ -1,0 +1,7 @@
+"sample_id","event","event_code","reason","policy","image_relpath","label_relpath"
+"Ghana_234935","Ghana","GHA","label contains no valid pixels","excluded_from_all_experiment_roles","v1.1/data/flood_events/HandLabeled/S1Hand/Ghana_234935_S1Hand.tif","v1.1/data/flood_events/HandLabeled/LabelHand/Ghana_234935_LabelHand.tif"
+"Ghana_26376","Ghana","GHA","label contains no valid pixels","excluded_from_all_experiment_roles","v1.1/data/flood_events/HandLabeled/S1Hand/Ghana_26376_S1Hand.tif","v1.1/data/flood_events/HandLabeled/LabelHand/Ghana_26376_LabelHand.tif"
+"Ghana_277","Ghana","GHA","label contains no valid pixels","excluded_from_all_experiment_roles","v1.1/data/flood_events/HandLabeled/S1Hand/Ghana_277_S1Hand.tif","v1.1/data/flood_events/HandLabeled/LabelHand/Ghana_277_LabelHand.tif"
+"Ghana_5079","Ghana","GHA","label contains no valid pixels","excluded_from_all_experiment_roles","v1.1/data/flood_events/HandLabeled/S1Hand/Ghana_5079_S1Hand.tif","v1.1/data/flood_events/HandLabeled/LabelHand/Ghana_5079_LabelHand.tif"
+"Ghana_83483","Ghana","GHA","label contains no valid pixels","excluded_from_all_experiment_roles","v1.1/data/flood_events/HandLabeled/S1Hand/Ghana_83483_S1Hand.tif","v1.1/data/flood_events/HandLabeled/LabelHand/Ghana_83483_LabelHand.tif"
+"Paraguay_34417","Paraguay","PRY","VV and VH contain no finite pixels","excluded_from_all_experiment_roles","v1.1/data/flood_events/HandLabeled/S1Hand/Paraguay_34417_S1Hand.tif","v1.1/data/flood_events/HandLabeled/LabelHand/Paraguay_34417_LabelHand.tif"

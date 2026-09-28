@@ -1,0 +1,17 @@
+{
+  "python": "3.11.16 | packaged by conda-forge | (main, Aug 21 2026, 22:37:11) [MSC v.1944 64 bit (AMD64)]",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "scipy": "1.17.1",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "timm": "0.9.2",
+    "rasterio": "1.4.4",
+    "pyarrow": "25.0.0",
+    "PyYAML": "6.0.3",
+    "scikit-learn": "1.9.0",
+    "tqdm": "4.70.0"
+  },
+  "scope": "Observed author model environment; not a fresh environment reproduction."
+}

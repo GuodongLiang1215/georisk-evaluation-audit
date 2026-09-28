@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "tier": "Frozen scores and replay sufficient statistics",
+  "python": "3.14.7 | packaged by conda-forge | (main, Aug 19 2026, 15:34:55) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "12.3.0",
+    "pypdf": "6.19.0"
+  },
+  "steps": [
+    {
+      "name": "binary_endpoint_audit",
+      "returncode": 0,
+      "seconds": 16.368
+    },
+    {
+      "name": "multiclass_endpoint_audit",
+      "returncode": 0,
+      "seconds": 0.71
+    },
+    {
+      "name": "operating_points_external_effects",
+      "returncode": 0,
+      "seconds": 0.455
+    },
+    {
+      "name": "threshold_workload",
+      "returncode": 0,
+      "seconds": 0.411
+    },
+    {
+      "name": "exact_sdc_matched_targets",
+      "returncode": 0,
+      "seconds": 1.431
+    },
+    {
+      "name": "comparator_summary_tables",
+      "returncode": 0,
+      "seconds": 0.454
+    },
+    {
+      "name": "temperature_ablation",
+      "returncode": 0,
+      "seconds": 2.226
+    },
+    {
+      "name": "temperature_summary_tables",
+      "returncode": 0,
+      "seconds": 0.445
+    },
+    {
+      "name": "main_figures",
+      "returncode": 0,
+      "seconds": 5.606
+    },
+    {
+      "name": "manuscript_table_exports",
+      "returncode": 0,
+      "seconds": 0.351
+    },
+    {
+      "name": "validate_outputs",
+      "returncode": 0,
+      "seconds": 1.431
+    }
+  ],
+  "seconds": 29.912,
+  "input_files_unchanged": true,
+  "inference_rerun": false,
+  "training_rerun": false
+}

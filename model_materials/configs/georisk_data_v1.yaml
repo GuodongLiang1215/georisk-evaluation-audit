@@ -1,0 +1,48 @@
+version: 1
+ignore_index: 255
+training_crop_size: [224, 224]
+evaluation_policy: full_native_tile
+
+sen1floods11:
+  role: primary_unseen_event_benchmark
+  source_samples: 446
+  analysis_samples: 440
+  native_shape: [512, 512]
+  channels: [VV, VH]
+  units: dB
+  target:
+    0: no_water
+    1: water
+    -1: ignore
+  input_valid_mask: all_input_channels_finite
+  evaluation_mask: target_in_0_1_and_input_valid
+  split: configs/sen1floods11_event_folds_v2.yaml
+  normalization: configs/sen1floods11_fold_normalization_v1.json
+  normalization_scope: fold_training_events_only
+
+kuro_siwo:
+  role: external_unseen_flood_event_validation
+  native_shape: [224, 224]
+  channels: [pre1_VV, pre1_VH, pre2_VV, pre2_VH, post_VV, post_VH, DEM]
+  target:
+    0: no_water
+    1: permanent_water
+    2: flood
+    3: ignore
+  input_valid_mask: distributed_validity_mask_equals_1_and_inputs_finite
+  evaluation_mask: input_valid_and_target_not_3
+  split: official_event_disjoint
+  normalization: geobench2/kuro_siwo/kuro_siwo_stats_clip_rescale.json
+
+burn_scars:
+  role: cross_hazard_external_validation
+  native_shape: [512, 512]
+  channels: [B02, B03, B04, B8A, B11, B12]
+  target:
+    0: background
+    1: burn_scar
+    -1: ignore
+  input_valid_mask: all_input_channels_finite
+  evaluation_mask: target_in_0_1_and_input_valid
+  split: official
+  normalization: geobench2/burn_scars/burn_scars_stats_clip_rescale.json

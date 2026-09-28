@@ -1,0 +1,38 @@
+version: 2
+status: locked_after_calibration_only_selection
+date: 2026-08-24
+
+score_name: georisk_v2
+output_subdirectory: risk_v2
+aggregate_metrics: georisk_v2_metrics.csv
+aggregate_risk_coverage: georisk_v2_risk_coverage.csv
+
+components:
+  binary:
+    - soft_dice_risk_binary
+    - uncertainty
+    - representation_shift
+    - spatial_inconsistency
+  multiclass:
+    - self_dice_risk_multiclass
+    - uncertainty
+    - representation_shift
+    - spatial_inconsistency
+
+component_scaling:
+  method: empirical_cdf
+  event_balanced_when_event_ids_exist: true
+  fit_split: calibration
+
+weight_fit:
+  method: event_balanced_nonnegative_ridge
+  target: tile_loss
+  ridge: 0.25
+  iterations: 100
+  normalization: l1
+  fit_split: calibration
+
+selection_evidence:
+  protocol: leave_one_calibration_event_out
+  source: results/v2_calibration_candidate_summary.csv
+  test_metrics_used_for_selection: false

@@ -1,0 +1,492 @@
+{
+  "status": "passed",
+  "absolute_tolerance": 1e-11,
+  "relative_tolerance": 1e-09,
+  "integer_and_boolean_columns": "exact equality required",
+  "csv_checks": [
+    {
+      "path": "evidence/comparator_analysis/fidelity_by_run_split.csv",
+      "rows": 36,
+      "max_absolute_numeric_difference": 1.6028844918025698e-15
+    },
+    {
+      "path": "evidence/comparator_analysis/fidelity_summary.csv",
+      "rows": 2,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/fitted_weights.csv",
+      "rows": 54,
+      "max_absolute_numeric_difference": 2.1649348980190553e-15
+    },
+    {
+      "path": "evidence/comparator_analysis/key_comparison_table.csv",
+      "rows": 8,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/mask_precision_sensitivity.csv",
+      "rows": 756,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/metrics_by_run.csv",
+      "rows": 1512,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/ordering_changes.csv",
+      "rows": 264,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/original_audit_reproduction.csv",
+      "rows": 216,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/paired_effects_by_run.csv",
+      "rows": 1296,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/paired_precision_sensitivity.csv",
+      "rows": 216,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/paired_summary.csv",
+      "rows": 432,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/retention_by_run.csv",
+      "rows": 252,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/retention_paired_summary.csv",
+      "rows": 72,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/risk_curves.csv",
+      "rows": 134064,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/sdc_replacement_effects.csv",
+      "rows": 144,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/comparator_analysis/test_scores.csv",
+      "rows": 2640,
+      "max_absolute_numeric_difference": 1.7763568394002505e-15
+    },
+    {
+      "path": "evidence/external_descriptive_summary.csv",
+      "rows": 3,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/external_seed_effects.csv",
+      "rows": 9,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/fixed_budget/paired_by_run.csv",
+      "rows": 27,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/fixed_budget/policy_by_event.csv",
+      "rows": 204,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/fixed_budget/policy_by_run.csv",
+      "rows": 54,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/fixed_budget/summary_by_block.csv",
+      "rows": 5,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/fixed_budget/tile_selections.csv",
+      "rows": 18720,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/multiclass_scope/class_set_macro_curves.csv",
+      "rows": 114,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/multiclass_scope/class_set_shift_by_event_seed.csv",
+      "rows": 60,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/multiclass_scope/class_set_shift_by_seed.csv",
+      "rows": 6,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/operating_point_effects_by_run_event.csv",
+      "rows": 336,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/operating_point_seed_averaged_events.csv",
+      "rows": 88,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/operating_point_summary.csv",
+      "rows": 128,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/component_sensitivity_table.csv",
+      "rows": 10,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/composite_ablation_table.csv",
+      "rows": 6,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/composite_routing_paired.csv",
+      "rows": 54,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/fidelity_by_run_split.csv",
+      "rows": 36,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/fitted_weights.csv",
+      "rows": 72,
+      "max_absolute_numeric_difference": 3.4555691641457997e-15
+    },
+    {
+      "path": "evidence/temperature_analysis/fixed_080_retention_summary.csv",
+      "rows": 12,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/metrics_by_run.csv",
+      "rows": 1512,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/paired_effects_by_run.csv",
+      "rows": 864,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/paired_summary.csv",
+      "rows": 288,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/pipeline_vs_exact_sdc.csv",
+      "rows": 16,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/probability_by_event.csv",
+      "rows": 264,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/probability_by_run.csv",
+      "rows": 72,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/probability_summary.csv",
+      "rows": 8,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/ranking_changes.csv",
+      "rows": 1344,
+      "max_absolute_numeric_difference": 1.3322676295501878e-15
+    },
+    {
+      "path": "evidence/temperature_analysis/retention_by_run.csv",
+      "rows": 252,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/risk_curves.csv",
+      "rows": 134064,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/routing_by_event.csv",
+      "rows": 924,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/routing_by_run.csv",
+      "rows": 252,
+      "max_absolute_numeric_difference": 1.4432899320127035e-15
+    },
+    {
+      "path": "evidence/temperature_analysis/routing_summary.csv",
+      "rows": 30,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/temperature_analysis/test_scores.csv",
+      "rows": 2640,
+      "max_absolute_numeric_difference": 2.7200464103316335e-15
+    },
+    {
+      "path": "evidence/threshold_denominator_audit.csv",
+      "rows": 27,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/threshold_event_counts.csv",
+      "rows": 102,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "evidence/threshold_routing_audit.csv",
+      "rows": 27,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "figures/plotted_data/figure_1_illustrative_geometry.csv",
+      "rows": 5,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "figures/plotted_data/figure_2_calibration_deltas.csv",
+      "rows": 330,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "figures/plotted_data/figure_2_curve_mean_iqr.csv",
+      "rows": 76,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "figures/plotted_data/figure_2_test_deltas.csv",
+      "rows": 72,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "figures/plotted_data/figure_3_aurc_mean_sd.csv",
+      "rows": 8,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "figures/plotted_data/figure_3_event_seed_mean_correlations.csv",
+      "rows": 264,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "figures/plotted_data/figure_4_event_mean_range.csv",
+      "rows": 22,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "figures/plotted_data/figure_4_mean_curves.csv",
+      "rows": 152,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "figures/plotted_data/figure_5_block_paired_deltas.csv",
+      "rows": 27,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/calibration_loeo_endpoint_effects.csv",
+      "rows": 10,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/calibration_loeo_endpoint_results.csv",
+      "rows": 660,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/calibration_loeo_endpoint_summary.csv",
+      "rows": 20,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/coverage_gain_decomposition_endpoints.csv",
+      "rows": 152,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/endpoint_aurc_by_run.csv",
+      "rows": 576,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/endpoint_aurc_summary.csv",
+      "rows": 64,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/endpoint_paired_effects.csv",
+      "rows": 48,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/endpoint_risk_coverage_by_run_event.csv",
+      "rows": 51072,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/hazard_area_retention_by_run_event.csv",
+      "rows": 264,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/hazard_area_retention_summary.csv",
+      "rows": 8,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/hazard_coverage_curves.csv",
+      "rows": 5016,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/ridge_sweep_sensitivity_by_run.csv",
+      "rows": 162,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/ridge_sweep_sensitivity_summary.csv",
+      "rows": 18,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/risk_content_coupling_by_event.csv",
+      "rows": 22,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/risk_content_coupling_by_run_event.csv",
+      "rows": 66,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/risk_content_coupling_summary.csv",
+      "rows": 4,
+      "max_absolute_numeric_difference": 1.3877787807814457e-17
+    },
+    {
+      "path": "source/r5_endpoint_audit/score_correlation_summary.csv",
+      "rows": 24,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r5_endpoint_audit/score_correlations_by_run_event.csv",
+      "rows": 792,
+      "max_absolute_numeric_difference": 2.220446049250313e-16
+    },
+    {
+      "path": "source/r6_multiclass_audit/e1_class_omission_records.csv",
+      "rows": 1710,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r6_multiclass_audit/e1_class_omission_summary.csv",
+      "rows": 4,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r6_multiclass_audit/e1_class_set_coverage_decomposition.csv",
+      "rows": 19,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r6_multiclass_audit/e1_class_set_coverage_summary.csv",
+      "rows": 3,
+      "max_absolute_numeric_difference": 1.1102230246251565e-16
+    },
+    {
+      "path": "source/r6_multiclass_audit/e1_endpoint_aurc.csv",
+      "rows": 36,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r6_multiclass_audit/e1_endpoint_curves.csv",
+      "rows": 7524,
+      "max_absolute_numeric_difference": 0.0
+    },
+    {
+      "path": "source/r6_multiclass_audit/e1_endpoint_paired_effects.csv",
+      "rows": 8,
+      "max_absolute_numeric_difference": 0.0
+    }
+  ],
+  "failures": [],
+  "excluded_prior_summary_variants": [
+    "source/r5_endpoint_audit/coverage_gain_decomposition.csv",
+    "source/r5_endpoint_audit/external_comparator_summary.csv"
+  ],
+  "figures": [
+    {
+      "figure": 1,
+      "pdf_fonts_embedded": true,
+      "raster_pixels": [
+        4320,
+        3480
+      ],
+      "base_text_at_6p5_in_pt": 8.125
+    },
+    {
+      "figure": 2,
+      "pdf_fonts_embedded": true,
+      "raster_pixels": [
+        4320,
+        3840
+      ],
+      "base_text_at_6p5_in_pt": 8.125
+    },
+    {
+      "figure": 3,
+      "pdf_fonts_embedded": true,
+      "raster_pixels": [
+        4320,
+        3660
+      ],
+      "base_text_at_6p5_in_pt": 8.125
+    },
+    {
+      "figure": 4,
+      "pdf_fonts_embedded": true,
+      "raster_pixels": [
+        4320,
+        4080
+      ],
+      "base_text_at_6p5_in_pt": 8.125
+    },
+    {
+      "figure": 5,
+      "pdf_fonts_embedded": true,
+      "raster_pixels": [
+        4320,
+        2340
+      ],
+      "base_text_at_6p5_in_pt": 8.125
+    }
+  ],
+  "table_snapshots_exported": 27,
+  "scope": "Frozen-data calculation reproduction, not independent data validation or model retraining."
+}
