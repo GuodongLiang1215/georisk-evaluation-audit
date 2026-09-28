@@ -1,0 +1,12 @@
+{
+  "run": "P2_F2_seed13",
+  "block": "P2",
+  "partition": "F2",
+  "seed": 13,
+  "temperature": 1.7294048565216196,
+  "calibration_records": 202,
+  "test_records": 145,
+  "total_records": 347,
+  "status": "inference complete; fidelity validation required",
+  "source_checkpoint": "runs/P2/f2/seed_13/checkpoints/best.pt"
+}

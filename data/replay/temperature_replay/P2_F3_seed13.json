@@ -1,0 +1,11 @@
+{
+  "run": "P2_F3_seed13",
+  "block": "P2",
+  "partition": "F3",
+  "seed": 13,
+  "temperature": 1.192337520819031,
+  "calibration_records": 93,
+  "test_records": 202,
+  "rows": 590,
+  "status": "paired temperature inference complete; validation required"
+}
