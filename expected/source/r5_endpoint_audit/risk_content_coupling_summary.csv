@@ -1,0 +1,5 @@
+block,content_delta,events,spearman_rho,two_sided_p_uncorrected,mean_aurc_delta_v2_minus_self_overlap,mean_content_delta_v2_minus_self_overlap
+P1,foreground_coverage_delta_v2_minus_self_overlap_at_0_8,11,0.33636363636363636,0.31182431390038634,-0.03389356306474274,-0.21124259562739353
+P1,foreground_coverage_area_delta_v2_minus_self_overlap,11,0.5090909090909091,0.10973723224165632,-0.03389356306474274,-0.24992021090577807
+P2,foreground_coverage_delta_v2_minus_self_overlap_at_0_8,11,0.5454545454545455,0.08265095734417503,-0.039989024664595835,-0.15970450779954667
+P2,foreground_coverage_area_delta_v2_minus_self_overlap,11,0.6363636363636364,0.0352869812200623,-0.039989024664595835,-0.23210741148082759

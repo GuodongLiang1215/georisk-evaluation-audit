@@ -1,0 +1,4 @@
+score_scope,integrated_class_set_shift,fraction_of_shift_at_or_below_0_50,class_set_shift_at_0_80
+georisk_v2,0.09636293025842918,,0.012053526172725093
+self_dice_risk_multiclass,0.09723189551715541,,0.012053526172725093
+mean_georisk_v2_and_self_overlap,0.0967974128877923,0.8327297492190663,0.012053526172725093

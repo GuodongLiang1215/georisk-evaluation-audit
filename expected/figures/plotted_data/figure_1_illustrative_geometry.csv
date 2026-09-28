@@ -1,0 +1,6 @@
+rank,valid_pixels,hazard_pixels,retained
+1,64,4,True
+2,48,12,True
+3,64,8,True
+4,56,12,True
+5,64,36,False

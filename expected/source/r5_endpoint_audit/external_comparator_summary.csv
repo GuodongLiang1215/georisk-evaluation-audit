@@ -1,0 +1,6 @@
+block,georisk_v2_aurc,self_overlap_aurc,delta_vs_self_overlap,runs_favoring_v2_vs_self_overlap,strongest_comparator,strongest_comparator_aurc,delta_vs_strongest,runs_favoring_v2_vs_strongest
+P1,0.2250,0.2593,-0.0343,9/9,Soft Dice-style self-overlap,0.2593,-0.0343,9/9
+P2,0.2384,0.2783,-0.0400,9/9,Soft Dice-style self-overlap,0.2783,-0.0400,9/9
+E1,0.2971,0.2953,0.0018,0/3,Multiclass self-overlap,0.2953,0.0018,0/3
+E2,0.0769,0.0990,-0.0221,3/3,Uncertainty + shift,0.0796,-0.0027,2/3
+E3,0.1384,0.1971,-0.0587,3/3,Uncertainty + shift,0.1600,-0.0216,3/3

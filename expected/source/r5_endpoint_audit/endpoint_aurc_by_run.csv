@@ -1,0 +1,577 @@
+block,partition,seed,subset,score,score_label,endpoint,event_macro_aurc
+P1,F1,13,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.13608544088691973
+P1,F1,13,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.13608544088691973
+P1,F1,13,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.24576883684434753
+P1,F1,13,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.14986499317847518
+P1,F1,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.16783814401340788
+P1,F1,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.16783814401340788
+P1,F1,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.2209351543347033
+P1,F1,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.12888123741090413
+P1,F1,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.2812897260186314
+P1,F1,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.2812897260186314
+P1,F1,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.5355077236214091
+P1,F1,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.4152836972437145
+P1,F1,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.18639887878730588
+P1,F1,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.18639887878730588
+P1,F1,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.23283648627077475
+P1,F1,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.13627328349803974
+P1,F1,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.2859704346642571
+P1,F1,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.2859704346642571
+P1,F1,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.5451597776934634
+P1,F1,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.42750474140752054
+P1,F1,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.11612692875295233
+P1,F1,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.11612692875295233
+P1,F1,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.18067188077251442
+P1,F1,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.1025051214357017
+P1,F1,37,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.13176824115088195
+P1,F1,37,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.13176824115088195
+P1,F1,37,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.2335940736103317
+P1,F1,37,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.14040502474797362
+P1,F1,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.1741525129097332
+P1,F1,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.1741525129097332
+P1,F1,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.22902336607605775
+P1,F1,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.133696648023301
+P1,F1,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.2810176677949089
+P1,F1,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.2810176677949089
+P1,F1,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.5331757291354096
+P1,F1,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.41186633847968507
+P1,F1,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.19292936281444495
+P1,F1,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.19292936281444495
+P1,F1,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.2416026508585407
+P1,F1,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.14171821705772478
+P1,F1,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.2945731542704764
+P1,F1,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.2945731542704764
+P1,F1,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.5585816890481584
+P1,F1,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.4406622184467942
+P1,F1,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.1231821497737419
+P1,F1,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.1231821497737419
+P1,F1,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.19014538060066746
+P1,F1,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.10868846226023848
+P1,F1,71,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.14441020008252942
+P1,F1,71,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.14441020008252942
+P1,F1,71,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.25868784256549426
+P1,F1,71,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.16041277321462927
+P1,F1,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.2101815401444074
+P1,F1,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.2101815401444074
+P1,F1,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.28284346026592333
+P1,F1,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.17471735022829984
+P1,F1,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.29463563485574457
+P1,F1,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.29463563485574457
+P1,F1,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.5614599125171118
+P1,F1,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.44509175675759216
+P1,F1,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.22771061811853047
+P1,F1,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.22771061811853047
+P1,F1,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.29319265539849604
+P1,F1,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.181294189948444
+P1,F1,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.2930121745138952
+P1,F1,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.2930121745138952
+P1,F1,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.5606789228603859
+P1,F1,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.443676716697021
+P1,F1,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.1420079224990909
+P1,F1,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.1420079224990909
+P1,F1,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.2298058009555339
+P1,F1,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.1362113987959118
+P1,F2,13,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.26202962267646557
+P1,F2,13,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.26202962267646557
+P1,F2,13,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.4711297007894296
+P1,F2,13,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.3261231227873493
+P1,F2,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.30606957314530997
+P1,F2,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.30606957314530997
+P1,F2,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.5084813039344487
+P1,F2,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3607499133900182
+P1,F2,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.3511249886894345
+P1,F2,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.38029165535610115
+P1,F2,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.7363262668089067
+P1,F2,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.6384194586650659
+P1,F2,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.3098000858662497
+P1,F2,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.3098000858662497
+P1,F2,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.5126299689795144
+P1,F2,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.3647644671102297
+P1,F2,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.40198426283652194
+P1,F2,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.40198426283652194
+P1,F2,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.7710367589769255
+P1,F2,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.6962457392318687
+P1,F2,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.21224924114549748
+P1,F2,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.24141590781216415
+P1,F2,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.43984537424690223
+P1,F2,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.3105332423965483
+P1,F2,37,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.27402049382550175
+P1,F2,37,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.27402049382550175
+P1,F2,37,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.5034947574888861
+P1,F2,37,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.3556345462613967
+P1,F2,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.3090743510542556
+P1,F2,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.3090743510542556
+P1,F2,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.5126273490061238
+P1,F2,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3659341751708513
+P1,F2,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.3800366041049875
+P1,F2,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.3800366041049875
+P1,F2,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.7380700780229384
+P1,F2,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.6424585944727663
+P1,F2,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.31392966604108036
+P1,F2,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.31392966604108036
+P1,F2,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.5185408586432921
+P1,F2,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.37204817722053524
+P1,F2,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.3996276165666138
+P1,F2,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.3996276165666138
+P1,F2,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.7706364695391947
+P1,F2,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.6957752881833181
+P1,F2,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.20176605865242692
+P1,F2,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.2309327253190936
+P1,F2,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.42423189896555036
+P1,F2,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.2977541740513544
+P1,F2,71,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.2613320710479413
+P1,F2,71,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.2613320710479413
+P1,F2,71,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.4738299474268822
+P1,F2,71,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.32856353204478295
+P1,F2,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.29983265610584847
+P1,F2,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.29983265610584847
+P1,F2,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.5048929083560192
+P1,F2,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3559878901476507
+P1,F2,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.3930443606748124
+P1,F2,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.3930443606748124
+P1,F2,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.7637261851554353
+P1,F2,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.6800487872584358
+P1,F2,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.30385385286331507
+P1,F2,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.30385385286331507
+P1,F2,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.5080984792964278
+P1,F2,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.35893113676799193
+P1,F2,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.39474592356230764
+P1,F2,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.39474592356230764
+P1,F2,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.7670251752475434
+P1,F2,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.6894828346591515
+P1,F2,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.19564798306130085
+P1,F2,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.23314798306130088
+P1,F2,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.4341010974839194
+P1,F2,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.3085389103602842
+P1,F3,13,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.29822578741513295
+P1,F3,13,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.29822578741513295
+P1,F3,13,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.4815394662331948
+P1,F3,13,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.3571642746538202
+P1,F3,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.31412434939511785
+P1,F3,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.31412434939511785
+P1,F3,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.5020997317079613
+P1,F3,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.377139651168175
+P1,F3,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.43751449973206147
+P1,F3,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.43751449973206147
+P1,F3,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.8006600655108924
+P1,F3,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.7349598610968963
+P1,F3,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.3295604630074531
+P1,F3,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.3295604630074531
+P1,F3,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.5233001802562268
+P1,F3,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.3951570285335988
+P1,F3,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.4040728606022971
+P1,F3,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.4040728606022971
+P1,F3,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.7550818188480242
+P1,F3,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.6708631004871111
+P1,F3,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.22468328195969084
+P1,F3,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.22468328195969084
+P1,F3,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.39002008484040823
+P1,F3,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.2745382263443006
+P1,F3,37,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.27216858066521843
+P1,F3,37,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.27216858066521843
+P1,F3,37,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.45547862108954723
+P1,F3,37,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.3325252970879566
+P1,F3,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.2859302057745033
+P1,F3,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.2859302057745033
+P1,F3,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.47244478763619674
+P1,F3,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.34690917829098733
+P1,F3,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.4371006211062178
+P1,F3,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.4371006211062178
+P1,F3,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.8073871120792762
+P1,F3,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.7459020003504381
+P1,F3,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.32018971436118066
+P1,F3,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.32018971436118066
+P1,F3,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.5199957820320218
+P1,F3,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.39006566277502136
+P1,F3,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.39007096709362915
+P1,F3,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.39007096709362915
+P1,F3,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.7418934958969075
+P1,F3,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.6515568071337846
+P1,F3,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.221823679137851
+P1,F3,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.221823679137851
+P1,F3,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.39085186617549417
+P1,F3,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.274295608152987
+P1,F3,71,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.24471556059702282
+P1,F3,71,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.24471556059702282
+P1,F3,71,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.41414801185658967
+P1,F3,71,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.29151228451886196
+P1,F3,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.26657315927803427
+P1,F3,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.26657315927803427
+P1,F3,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.4436462626449949
+P1,F3,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3167849379338453
+P1,F3,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.39052939575403844
+P1,F3,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.39052939575403844
+P1,F3,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.7472589706270664
+P1,F3,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.6516700048626117
+P1,F3,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.31522799683222774
+P1,F3,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.31522799683222774
+P1,F3,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.503555396987406
+P1,F3,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.3707738577924789
+P1,F3,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.3787462710099248
+P1,F3,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.3787462710099248
+P1,F3,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.7248478984411254
+P1,F3,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.6307527887856258
+P1,F3,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.21053160361663006
+P1,F3,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.21053160361663006
+P1,F3,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.37104069162359465
+P1,F3,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.24942570178344498
+P2,F1,13,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.16326279823800793
+P2,F1,13,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.16326279823800793
+P2,F1,13,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.28274555012245467
+P2,F1,13,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.17631286555970885
+P2,F1,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.21905280386883672
+P2,F1,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.21905280386883672
+P2,F1,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.29624047563853895
+P2,F1,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.18292335688054814
+P2,F1,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.3228771884641841
+P2,F1,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.3228771884641841
+P2,F1,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.6029184107142667
+P2,F1,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.4893538287904139
+P2,F1,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.2422850979987935
+P2,F1,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.2422850979987935
+P2,F1,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.3116556812538396
+P2,F1,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.19379197395976022
+P2,F1,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.3254039804433824
+P2,F1,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.3254039804433824
+P2,F1,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.6090536358220884
+P2,F1,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.501635888996633
+P2,F1,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.1523889161984233
+P2,F1,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.1523889161984233
+P2,F1,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.23762383192053124
+P2,F1,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.14215415826150438
+P2,F1,37,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.15477458574235886
+P2,F1,37,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.15477458574235886
+P2,F1,37,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.26111654947063473
+P2,F1,37,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.15758497390221587
+P2,F1,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.19665634147813377
+P2,F1,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.19665634147813377
+P2,F1,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.26427084058528416
+P2,F1,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.15864775011353183
+P2,F1,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.31221677426590927
+P2,F1,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.31221677426590927
+P2,F1,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.5850560274880093
+P2,F1,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.4711043007429237
+P2,F1,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.22294478035304033
+P2,F1,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.22294478035304033
+P2,F1,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.28089920153752723
+P2,F1,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.17006445354886768
+P2,F1,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.3197349121018108
+P2,F1,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.3197349121018108
+P2,F1,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.5999337455374785
+P2,F1,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.4923884991184693
+P2,F1,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.14860740357142924
+P2,F1,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.14860740357142924
+P2,F1,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.2279748172940174
+P2,F1,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.13410268808531073
+P2,F1,71,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.15080041078627596
+P2,F1,71,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.15080041078627596
+P2,F1,71,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.26433039864227403
+P2,F1,71,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.16263724295456222
+P2,F1,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.21663942584777182
+P2,F1,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.21663942584777182
+P2,F1,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.30288479694328824
+P2,F1,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.19082282184501487
+P2,F1,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.32506779538606795
+P2,F1,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.32506779538606795
+P2,F1,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.6130284569098075
+P2,F1,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.5051578276575065
+P2,F1,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.25085313079934596
+P2,F1,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.25085313079934596
+P2,F1,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.3277789295287891
+P2,F1,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.21012632412365503
+P2,F1,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.31176695479977184
+P2,F1,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.31176695479977184
+P2,F1,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.5916524445095322
+P2,F1,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.4804133347692108
+P2,F1,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.15550108949276115
+P2,F1,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.15550108949276115
+P2,F1,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.2500734016146583
+P2,F1,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.15178603773609
+P2,F2,13,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.24393182320238843
+P2,F2,13,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.24393182320238843
+P2,F2,13,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.4259357218435309
+P2,F2,13,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.28902452028911285
+P2,F2,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.2930946206537249
+P2,F2,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.2930946206537249
+P2,F2,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.4757440525125867
+P2,F2,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3342889406577942
+P2,F2,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.38918789814143345
+P2,F2,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.38918789814143345
+P2,F2,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.7537742503197674
+P2,F2,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.6698333548289775
+P2,F2,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.29676214132722156
+P2,F2,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.29676214132722156
+P2,F2,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.4800661508781175
+P2,F2,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.33867777058948945
+P2,F2,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.4074946302983457
+P2,F2,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.4074946302983457
+P2,F2,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.7792067430098594
+P2,F2,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.7107320831580005
+P2,F2,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.2014173687487642
+P2,F2,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.23891736874876424
+P2,F2,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.43054129183652956
+P2,F2,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.31131323776190833
+P2,F2,37,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.2578565338748332
+P2,F2,37,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.2578565338748332
+P2,F2,37,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.4551899710599958
+P2,F2,37,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.31394856526582154
+P2,F2,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.2922033696338615
+P2,F2,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.2922033696338615
+P2,F2,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.4758161186494608
+P2,F2,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.33281038985238615
+P2,F2,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.4022109882339496
+P2,F2,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.4022109882339496
+P2,F2,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.7821729779723696
+P2,F2,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.7147332705173619
+P2,F2,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.2947280778185257
+P2,F2,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.2947280778185257
+P2,F2,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.4808069965290403
+P2,F2,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.33768175475215784
+P2,F2,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.40839984430400206
+P2,F2,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.40839984430400206
+P2,F2,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.7866200686745222
+P2,F2,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.7224439569796397
+P2,F2,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.20231245896111275
+P2,F2,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.24814579229444608
+P2,F2,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.4498265715637063
+P2,F2,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.3302182539060197
+P2,F2,71,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.2664505294261141
+P2,F2,71,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.2664505294261141
+P2,F2,71,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.47117092563796303
+P2,F2,71,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.33590280323947774
+P2,F2,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.30252819813809806
+P2,F2,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.30252819813809806
+P2,F2,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.4865223627525462
+P2,F2,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.34512991027233036
+P2,F2,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.39508553564080284
+P2,F2,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.39508553564080284
+P2,F2,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.7636649028789623
+P2,F2,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.6844413049337905
+P2,F2,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.3057329667657839
+P2,F2,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.3057329667657839
+P2,F2,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.48975344498614237
+P2,F2,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.34853991321182004
+P2,F2,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.40962421040751196
+P2,F2,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.40962421040751196
+P2,F2,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.7809023264476987
+P2,F2,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.7130289156501103
+P2,F2,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.20647164657756942
+P2,F2,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.2523049799109028
+P2,F2,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.4529059996994525
+P2,F2,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.3347624062918348
+P2,F3,13,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.2903399270965217
+P2,F3,13,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.2903399270965217
+P2,F3,13,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.48801267138477755
+P2,F3,13,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.3497243253523172
+P2,F3,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.3122250168241764
+P2,F3,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.3122250168241764
+P2,F3,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.5086231569961105
+P2,F3,13,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3693881900382198
+P2,F3,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.41431035445825065
+P2,F3,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.41431035445825065
+P2,F3,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.7944561527281789
+P2,F3,13,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.7236943195110411
+P2,F3,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.3216751198574541
+P2,F3,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.3216751198574541
+P2,F3,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.5196960954625516
+P2,F3,13,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.37930898057080503
+P2,F3,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.3736730944635385
+P2,F3,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.3736730944635385
+P2,F3,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.7220772409856648
+P2,F3,13,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.6220945558608904
+P2,F3,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.2169688754352862
+P2,F3,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.2169688754352862
+P2,F3,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.38154571260375586
+P2,F3,13,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.2531337622732935
+P2,F3,37,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.32148091770331405
+P2,F3,37,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.32148091770331405
+P2,F3,37,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.5172637344531118
+P2,F3,37,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.37637780127113873
+P2,F3,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.34369274049329
+P2,F3,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.34369274049329
+P2,F3,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.5376456504580814
+P2,F3,37,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.39635844326537
+P2,F3,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.41530516236278636
+P2,F3,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.41530516236278636
+P2,F3,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.7871716113432891
+P2,F3,37,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.7111804091811941
+P2,F3,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.3560995261553012
+P2,F3,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.3560995261553012
+P2,F3,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.5504362480154756
+P2,F3,37,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.4088001890447422
+P2,F3,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.3925366145792965
+P2,F3,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.3925366145792965
+P2,F3,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.7447225222656044
+P2,F3,37,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.6538064649204801
+P2,F3,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.24801842204701047
+P2,F3,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.24801842204701047
+P2,F3,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.43062209521285055
+P2,F3,37,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.2941083447981753
+P2,F3,71,all_tiles,georisk_v2,GeoRisk v2,present_class_miou_risk,0.29631677019067026
+P2,F3,71,all_tiles,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.29631677019067026
+P2,F3,71,all_tiles,georisk_v2,GeoRisk v2,foreground_iou_risk,0.47485394484769095
+P2,F3,71,all_tiles,georisk_v2,GeoRisk v2,foreground_dice_risk,0.3403089821689886
+P2,F3,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.32892805828609395
+P2,F3,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.32892805828609395
+P2,F3,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.5056895598442082
+P2,F3,71,all_tiles,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3684613352835517
+P2,F3,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,present_class_miou_risk,0.40887118649274334
+P2,F3,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,fixed_full_event_class_miou_risk,0.40887118649274334
+P2,F3,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_iou_risk,0.7687025712019564
+P2,F3,71,all_tiles,predicted_foreground_fraction,Predicted foreground prevalence,foreground_dice_risk,0.6832450846537561
+P2,F3,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,present_class_miou_risk,0.3441869518950983
+P2,F3,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,fixed_full_event_class_miou_risk,0.3441869518950983
+P2,F3,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_iou_risk,0.5167629221530493
+P2,F3,71,all_tiles,predicted_foreground_scarcity,Predicted foreground scarcity,foreground_dice_risk,0.37976058281440056
+P2,F3,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),present_class_miou_risk,0.4012403249937869
+P2,F3,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),fixed_full_event_class_miou_risk,0.4012403249937869
+P2,F3,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_iou_risk,0.7489362259438224
+P2,F3,71,all_tiles,reference_foreground_fraction,Reference foreground prevalence (label-informed),foreground_dice_risk,0.660252700087999
+P2,F3,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,present_class_miou_risk,0.25380058762461605
+P2,F3,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,fixed_full_event_class_miou_risk,0.25380058762461605
+P2,F3,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_iou_risk,0.42992199531012903
+P2,F3,71,all_tiles,oracle_tile_loss,Label-informed tile-loss ordering,foreground_dice_risk,0.29516131170158844
+P1,F1,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.13608544088691973
+P1,F1,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.13608544088691973
+P1,F1,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.24576883684434753
+P1,F1,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.14986499317847518
+P1,F1,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.16783814401340788
+P1,F1,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.16783814401340788
+P1,F1,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.2209351543347033
+P1,F1,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.12888123741090413
+P1,F1,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.13176824115088195
+P1,F1,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.13176824115088195
+P1,F1,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.2335940736103317
+P1,F1,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.14040502474797362
+P1,F1,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.1741525129097332
+P1,F1,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.1741525129097332
+P1,F1,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.22902336607605775
+P1,F1,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.133696648023301
+P1,F1,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.14441020008252942
+P1,F1,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.14441020008252942
+P1,F1,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.25868784256549426
+P1,F1,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.16041277321462927
+P1,F1,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.2101815401444074
+P1,F1,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.2101815401444074
+P1,F1,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.28284346026592333
+P1,F1,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.17471735022829984
+P1,F2,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.261837979505605
+P1,F2,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.261837979505605
+P1,F2,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.46835588887932245
+P1,F2,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.32383581330858924
+P1,F2,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.3100344540957136
+P1,F2,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.3100344540957136
+P1,F2,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.506722317009233
+P1,F2,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3592345991952831
+P1,F2,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.272464496991237
+P1,F2,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.272464496991237
+P1,F2,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.49927395897897003
+P1,F2,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.35246085325526955
+P1,F2,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.31270638843110954
+P1,F2,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.31270638843110954
+P1,F2,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.5106378872470337
+P1,F2,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3643186772271712
+P1,F2,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.2561894698110591
+P1,F2,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.2561894698110591
+P1,F2,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.46368466012278853
+P1,F2,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.3193211348147078
+P1,F2,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.30510527603237714
+P1,F2,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.30510527603237714
+P1,F2,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.5021509098297912
+P1,F2,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.35360521554828483
+P1,F3,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.2979400035366259
+P1,F3,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.2979400035366259
+P1,F3,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.48095755394098705
+P1,F3,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.3567063610885825
+P1,F3,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.31414384907551324
+P1,F3,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.31414384907551324
+P1,F3,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.5020090442424534
+P1,F3,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.37705965612227166
+P1,F3,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.2721246021024227
+P1,F3,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.2721246021024227
+P1,F3,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.45532204760921685
+P1,F3,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.3323971171969384
+P1,F3,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.28570809847306866
+P1,F3,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.28570809847306866
+P1,F3,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.47198517280624064
+P1,F3,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.34650508343743275
+P1,F3,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.24471556059702282
+P1,F3,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.24471556059702282
+P1,F3,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.41414801185658967
+P1,F3,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.29151228451886196
+P1,F3,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.26657315927803427
+P1,F3,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.26657315927803427
+P1,F3,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.4436462626449949
+P1,F3,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3167849379338453
+P2,F1,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.16360883930857273
+P2,F1,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.16360883930857273
+P2,F1,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.28316053615526876
+P2,F1,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.17655160380524948
+P2,F1,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.21875848639519815
+P2,F1,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.21875848639519815
+P2,F1,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.2955950369271499
+P2,F1,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.18254491390590072
+P2,F1,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.1547795101300007
+P2,F1,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.1547795101300007
+P2,F1,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.2609521294087168
+P2,F1,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.1574894626068924
+P2,F1,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.19666912223232616
+P2,F1,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.19666912223232616
+P2,F1,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.2636811649975423
+P2,F1,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.1583017895047171
+P2,F1,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.1507800683980335
+P2,F1,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.1507800683980335
+P2,F1,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.26406613734677503
+P2,F1,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.16248830613100784
+P2,F1,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.21641614719628066
+P2,F1,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.21641614719628066
+P2,F1,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.3021471872975855
+P2,F1,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.19038979857643304
+P2,F2,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.2477113305686932
+P2,F2,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.2477113305686932
+P2,F2,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.42949166221363516
+P2,F2,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.29158024254697007
+P2,F2,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.29749137437566003
+P2,F2,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.29749137437566003
+P2,F2,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.47407891600788193
+P2,F2,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.33303583073056175
+P2,F2,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.26011125768603066
+P2,F2,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.26011125768603066
+P2,F2,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.45393165239677635
+P2,F2,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.3127342521805989
+P2,F2,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.2996564270484116
+P2,F2,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.2996564270484116
+P2,F2,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.4748116841293296
+P2,F2,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3319611912850404
+P2,F2,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.26964806538733277
+P2,F2,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.26964806538733277
+P2,F2,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.47278590696995804
+P2,F2,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.3370544274281482
+P2,F2,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.3072505594025253
+P2,F2,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.3072505594025253
+P2,F2,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.4842497648529109
+P2,F2,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3434178881276456
+P2,F3,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.2887779933578367
+P2,F3,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.2887779933578367
+P2,F3,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.48462582982094404
+P2,F3,13,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.34662019328720534
+P2,F3,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.31134721552498573
+P2,F3,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.31134721552498573
+P2,F3,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.5058420037699158
+P2,F3,13,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.36691673373221656
+P2,F3,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.3200734657284157
+P2,F3,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.3200734657284157
+P2,F3,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.5132022424893408
+P2,F3,37,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.3722289846775952
+P2,F3,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.3438199822053543
+P2,F3,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.3438199822053543
+P2,F3,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.534963126979732
+P2,F3,37,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.3936555351977592
+P2,F3,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,present_class_miou_risk,0.2964383831422289
+P2,F3,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,fixed_full_event_class_miou_risk,0.2964383831422289
+P2,F3,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_iou_risk,0.47465813406834684
+P2,F3,71,exclude_reference_and_prediction_empty,georisk_v2,GeoRisk v2,foreground_dice_risk,0.34015331588889264
+P2,F3,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,present_class_miou_risk,0.3286640392235321
+P2,F3,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,fixed_full_event_class_miou_risk,0.3286640392235321
+P2,F3,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_iou_risk,0.5048343471341845
+P2,F3,71,exclude_reference_and_prediction_empty,soft_dice_risk_binary,Soft Dice-style self-overlap,foreground_dice_risk,0.36773611006994444
